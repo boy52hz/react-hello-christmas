@@ -33,6 +33,7 @@
 }
 
 #logo {
-    color: var(--light);
+    background-color: var(--secondary-color);
+    color: black;
     padding: 1rem;
 }

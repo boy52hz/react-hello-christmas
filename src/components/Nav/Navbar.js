@@ -10,8 +10,8 @@ class Navbar extends React.Component {
         <ul>
           <NavItem name="Home" to="#Hero"/>
           <NavItem name="History" to="#History"/>
-          <NavItem name="Content 2" to="#content2"/>
-          <NavItem name="Content 3" to="#content3"/>
+          <NavItem name="Countdown" to="#Countdown"/>
+          <NavItem name="Make a wish!" to="#Wish"/>
         </ul>
       </nav>
     );

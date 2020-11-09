@@ -1,5 +1,13 @@
 .App {
-  text-align: center;
-  width: 100vw;
-  height: 100vh;
+  	text-align: center;
+  	width: 100vw;
+  	height: 100vh;
+}
+
+.App__triangle-sep {
+  	width: 0;
+  	height: 0;
+  	border-left: 50vw solid transparent;
+  	border-right: 50vw solid transparent;
+  	border-top: 25vh solid var(--primary-color);
 }

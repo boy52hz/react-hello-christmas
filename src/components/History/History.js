@@ -21,6 +21,12 @@ class HistorySection extends React.Component {
             Id amet ullamco fugiat laborum irure adipisicing consequat ipsum proident.
             </p>
           </div>
+          <div className="History__gallery">
+            <img src="https://source.unsplash.com/random/250x250" alt="Christmas 1"/>
+            <img src="https://source.unsplash.com/random/250x250" alt="Christmas 1"/>
+            <img src="https://source.unsplash.com/random/250x250" alt="Christmas 1"/>
+            <img src="https://source.unsplash.com/random/250x250" alt="Christmas 1"/>
+          </div>
         </div>
       </section>
     );

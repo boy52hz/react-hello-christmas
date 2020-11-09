@@ -23,9 +23,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-/* Bootstrap Override */
-
-.container-fluid{
-  padding: 0 !important;
-}
