@@ -3,4 +3,9 @@
     padding: .5rem 1.5rem;
     border-radius: 20px;
     background-color: var(--primary-color);
+    transition: .3s ease-out;
+}
+
+.Button:hover {
+    background-color: var(--secondary-color);
 }
