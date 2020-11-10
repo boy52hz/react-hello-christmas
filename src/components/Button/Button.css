@@ -9,3 +9,7 @@
 .Button:hover {
     background-color: var(--secondary-color);
 }
+
+.Button:focus, .Button:active {
+    outline: none;
+}

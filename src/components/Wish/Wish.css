@@ -8,6 +8,10 @@
     max-width: 80%;
 }
 
+.Wish__main img {
+    width: 500px;
+}
+
 .Wish h1 {
     font-size: 3rem;
     margin-bottom: 1rem;

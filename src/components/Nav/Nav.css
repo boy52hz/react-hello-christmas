@@ -5,6 +5,7 @@
     justify-content: space-around;
     align-items: baseline;
     padding: 1em;
+    transition: .2s ease-out;
 }
 
 .Navbar ul {
@@ -36,4 +37,12 @@
     background-color: var(--secondary-color);
     color: black;
     padding: 1rem;
+}
+
+.scrolled {
+    padding: .5em 1em;
+    background-color: black;
+}
+
+@media screen and (max-width: 670px) {
 }
