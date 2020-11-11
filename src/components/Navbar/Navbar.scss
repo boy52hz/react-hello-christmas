@@ -1,28 +1,28 @@
 .Navbar {
     position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    font-size: 1.2rem;
-    padding: 1em;
     width: 100%;
-    transition: .3s ease-out;
+    padding: 0 20px;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    transition:  .3s ease-in-out;
 
     .Navbar__logo {
+        padding: 12px;
         font-size: 2rem;
         color: white;
     }
     
     .Navbar__menu {
+        list-style: none;
         display: flex;
-        width: 70vw;
-        justify-content: flex-end;
+        flex-flow: row nowrap;
         color: var(--light-color);
     }
     
     .Navbar__item {
-        list-style: none;
-        margin-left: 1.5rem;
+        font-size: 1.2rem;
+        padding: 26px 1em;
     }
     
     .Navbar__item a {
@@ -36,16 +36,35 @@
     }
 
     .hamburger {
+        position: absolute;
         display: none;
+        z-index: 1;
+        top: 35%;
+        right: 0;
+        cursor: pointer;
     }
 
-    @media (max-width: 576px) {
+    @media screen and (max-width: 598px) {
         .hamburger {
             display: block;
         }
-    
+
         .Navbar__menu {
-            display: none;
+            text-align: left;
+            flex-flow: column nowrap;
+            background: rgb(40, 40, 40);
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 300px;
+            justify-content: center;
+            transform: translateX(0);
+            transition: .3s ease-out;
+        }
+
+        .hide {
+            transform: translateX(100%);
         }
     }
 }
@@ -56,5 +75,4 @@
 
 .scrolled {
     background-color: black;
-    padding: .5em;
 }

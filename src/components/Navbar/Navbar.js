@@ -42,7 +42,7 @@ class Navbar extends React.Component {
           className="hamburger"
           isOpen={this.state.open}
           menuClicked={this.handleClick.bind(this)}
-          width={22}
+          width={30}
           height={20}
           rotate={0}
           color='white'
@@ -50,7 +50,7 @@ class Navbar extends React.Component {
           animationDuration={0.5}
         />
         <Scrollspy 
-          className={ this.state.open ? 'Navbar__menu active' : 'Navbar__menu' } 
+          className={ this.state.open ? 'Navbar__menu' : 'Navbar__menu hide' }
           items={ ['Hero', 'History', 'Countdown', 'Wish'] } 
           currentClassName="is-current"
         >
