@@ -1,10 +1,10 @@
 import React from 'react';
-import './Hero.css';
+import './Hero.scss';
 
 class HeroSection extends React.Component {
   render() {
     return (
-      <section id="Hero" className="Hero">
+      <section id="Hero">
         <div className="Hero__container">
           <h1>Merry Christmas!</h1>
           <p>Veniam proident ullamco commodo dolore deserunt 

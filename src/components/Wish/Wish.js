@@ -1,5 +1,5 @@
 import React from 'react'
-import './Wish.css';
+import './Wish.scss';
 
 import Button from '../Button/Button';
 

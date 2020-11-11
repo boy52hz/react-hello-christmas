@@ -1,10 +1,10 @@
 import React from 'react';
-import './History.css';
+import './History.scss';
 
 class HistorySection extends React.Component {
   render() {
     return (
-      <section id="History" className="History">
+      <section id="History">
         <div className="History__container">
           <h1>History of Christmas</h1>
           <div className="History__description">

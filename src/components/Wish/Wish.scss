@@ -1,0 +1,24 @@
+.Wish {
+    padding: 2rem;
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        padding: .8rem;
+        background-color: var(--secondary-color);
+    }
+
+    .Wish__container {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+
+        .Wish__main img {
+            width: 500px;
+        }
+
+        .Wish__btn-group {
+            margin-top: 1rem;
+        }
+    }
+}

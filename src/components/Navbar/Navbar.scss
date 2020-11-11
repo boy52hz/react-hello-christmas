@@ -1,0 +1,60 @@
+.Navbar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 1.2rem;
+    padding: 1em;
+    width: 100%;
+    transition: .3s ease-out;
+
+    .Navbar__logo {
+        font-size: 2rem;
+        color: white;
+    }
+    
+    .Navbar__menu {
+        display: flex;
+        width: 70vw;
+        justify-content: flex-end;
+        color: var(--light-color);
+    }
+    
+    .Navbar__item {
+        list-style: none;
+        margin-left: 1.5rem;
+    }
+    
+    .Navbar__item a {
+        color: inherit;
+        text-decoration: none;
+        transition: .2s ease-out;
+    }
+    
+    .Navbar__item:hover {
+        color: var(--secondary-color);
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    @media (max-width: 576px) {
+        .hamburger {
+            display: block;
+        }
+    
+        .Navbar__menu {
+            display: none;
+        }
+    }
+}
+
+.is-current {
+    color: red;
+}
+
+.scrolled {
+    background-color: black;
+    padding: .5em;
+}

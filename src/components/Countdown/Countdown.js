@@ -1,5 +1,5 @@
 import React from 'react';
-import './Countdown.css';
+import './Countdown.scss';
 
 class Countdown extends React.Component {
 	state = {
@@ -30,7 +30,7 @@ class Countdown extends React.Component {
   render() {
 		const state = this.state;
     return (
-      <section id="Countdown" className="Countdown">
+      <section id="Countdown">
         <div className="Countdown__container">
 					<h1>Countdown</h1>
           <div className="Countdown__box">

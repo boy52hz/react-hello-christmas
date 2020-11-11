@@ -1,7 +1,7 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 
-import Navbar from './components/Nav/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import History from './components/History/History';
 import Countdown from './components/Countdown/Countdown';

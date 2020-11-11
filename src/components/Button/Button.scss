@@ -4,12 +4,12 @@
     border-radius: 20px;
     background-color: var(--primary-color);
     transition: .3s ease-out;
-}
 
-.Button:hover {
-    background-color: var(--secondary-color);
-}
+    &:hover {
+        background-color: var(--secondary-color);
+    }
 
-.Button:focus, .Button:active {
-    outline: none;
+    &:focus, :active {
+        outline: none;
+    }
 }
