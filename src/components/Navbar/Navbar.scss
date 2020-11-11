@@ -67,6 +67,16 @@
             transform: translateX(100%);
         }
     }
+
+    @media (max-width: 420px) {
+        .Navbar__menu {
+            width: 200px;
+
+            .Navbar__item {
+                font-size: 1rem;
+            }
+        }
+    }
 }
 
 .is-current {

@@ -21,4 +21,16 @@
             margin-top: 1rem;
         }
     }
+
+    @media (max-width: 500px) {
+        .Wish__container .Wish__main img {
+            width: 250px;
+        }
+    }
+
+    @media (max-width: 420px) {
+        .Wish__container .Wish__main img {
+            width: 200px;
+        }
+    }
 }

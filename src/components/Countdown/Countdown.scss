@@ -7,7 +7,7 @@
 
     h1 {
         color: var(--light-color);
-        text-align: left;
+        text-align: center;
         margin: 2rem 0;
     }
 
@@ -17,7 +17,6 @@
         .Countdown__box {
             display: flex;
             justify-content: space-around;
-            background-color: var(--secondary-color);
 
             .Countdown__item {
                 color: var(--light-color);
@@ -31,41 +30,39 @@
                 }
     
                 .timer {
-                    background-color: var(--primary-color);
-                    padding: 2rem;
-                }
-            }
-
-            @media screen and (max-width: 970px) {
-                .Countdown__item .title {
-                    font-size: 1.5rem;
-                }
-            
-                .Countdown__item {
-                    font-size: 3rem;
-                    padding: 1.2rem;
+                    padding: 0 1rem;
                 }
             }
             
             @media screen and (max-width: 790px) {
+                .Countdown__item .title {
+                    font-size: 1.8rem;
+                }
+            
+                .Countdown__item {
+                    font-size: 2.8rem;
+                }
+            }
+            
+            @media screen and (max-width: 670px) {
                 .Countdown__item .title {
                     font-size: 1.2rem;
                 }
             
                 .Countdown__item {
                     font-size: 2rem;
-                    padding: 1rem;
                 }
             }
-            
-            @media screen and (max-width: 650px) {
+
+            @media screen and (max-width: 500px) {
+                flex-wrap: wrap;
                 .Countdown__item .title {
-                    font-size: 1rem;
+                    font-size: 1.2rem;
                 }
             
                 .Countdown__item {
-                    font-size: 1.5rem;
-                    padding: .5rem;
+                    // flex: 1 1 80px;
+                    font-size: 2rem;
                 }
             }
         }

@@ -32,23 +32,23 @@ class Countdown extends React.Component {
     return (
       <section id="Countdown">
         <div className="Countdown__container">
-					<h1>Countdown</h1>
+					<h1>Countdown before our Christmas!</h1>
           <div className="Countdown__box">
 						<div className="Countdown__item">
-							<div className="title">Days</div>
 							<div className="timer">{ state.days }</div>
+							<div className="title">Days</div>
 						</div>
 						<div className="Countdown__item">
-							<div className="title">Hours</div>
 							<div className="timer">{ state.hours }</div>
+							<div className="title">Hours</div>
 						</div>
 						<div className="Countdown__item">
-							<div className="title">Minutes</div>
 							<div className="timer">{ state.minutes }</div>
+							<div className="title">Minutes</div>
 						</div>
 						<div className="Countdown__item">
-							<div className="title">Seconds</div>
 							<div className="timer">{ state.seconds }</div>
+							<div className="title">Seconds</div>
 						</div>
           </div>
         </div>
