@@ -8,15 +8,15 @@
 	.History__container {
 		color: black;
 		max-width: 80%;
-  	}
-  
-  	.History__container h1 {
-		font-size: 3rem;
-  	}
-  
-  	.History__container p {
-		padding: 1.2rem;
-		font-size: 1rem;
+
+		h1 {
+			font-size: 3rem;
+		}
+
+		p {
+			padding: 1.2rem;
+			font-size: 1rem;
+		}
   	}
   
   	.History__description {
@@ -43,6 +43,7 @@
 				font-size: 2rem;
 			}
 		}
+		
 		.History__description {
 			flex-direction: column;
 		}

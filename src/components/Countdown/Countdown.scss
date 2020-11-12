@@ -11,13 +11,15 @@
         margin: 2rem 0;
     }
 
-    .Countdown__container {
-        max-width: 80%;
+    .Countdown {
+        &__container {
+            max-width: 80%;
+        }
 
-        .Countdown__box {
+        &__box {
             display: flex;
             justify-content: space-around;
-
+            
             .Countdown__item {
                 color: var(--light-color);
                 font-size: 4rem;
