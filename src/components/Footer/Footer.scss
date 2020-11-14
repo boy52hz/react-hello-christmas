@@ -1,0 +1,27 @@
+#Footer {
+    position: relative;
+    background-color: var(--secondary-color);
+
+    .header {
+        position: absolute;
+        font-size: 46px;
+        right: 20px;
+        top: -40px;
+        z-index: 1;
+    }
+
+    .Footer__box {
+        position: relative;
+        background-color: #ffffff;
+        height: 231px;
+        width: 690px;
+        margin: 1rem;
+
+        .title {
+            position: absolute;
+            left: 10px;
+            top: -25px;
+            font-size: 32px;
+        }
+    }
+}
