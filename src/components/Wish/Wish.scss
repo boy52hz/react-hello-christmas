@@ -1,25 +1,34 @@
 .Wish {
     padding: 2rem;
+    background-color: #9AC0CB;
+    min-height: 100%;
 
-    h1 {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-        padding: .8rem;
-        background-color: var(--secondary-color);
+    .header {
+        margin-bottom: 1.5em;
+
+        h1 {
+            font-size: 54px;
+            font-family: 'Cardo', serif;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            padding: .8rem;
+        }
+    
+        p {
+            font-family: 'Cardo', serif;
+            font-size: 24px;
+            font-weight: 400;
+        }
     }
 
-    .Wish__container {
+    &__container {
         display: block;
         margin: 0 auto;
         max-width: 80%;
+    }
 
-        .Wish__main img {
-            width: 500px;
-        }
-
-        .Wish__btn-group {
-            margin-top: 1rem;
-        }
+    &__btn-group {
+        margin-top: 1rem;
     }
 
     @media (max-width: 500px) {
