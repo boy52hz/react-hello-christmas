@@ -16,17 +16,25 @@
 			font-weight: 700;
 			font-size: 3rem;
 			color: #CED9DF;
+			text-shadow: 2px 2px 5px rgba($color: #ffffff, $alpha: .7);
 		}
 
 		p {
+			width: 90%;
+			margin-left: -20px;
 			margin-top: 1%;
 			padding: 1.2rem;
-			padding: 0 40px;
+			padding: 0 50px;
 			font-family: 'Cardo', serif;
 			font-size: 16pt;
 			color: #CED9DF;
-			text-indent: 1em;
+			
 			text-align: justify;
+		}
+
+		.p1 {
+			text-indent: 1em;
+			margin-left: -20px;
 		}
 
   	}
@@ -56,4 +64,28 @@
 			flex-direction: column;
 		}
 	}
+}
+
+.bubble1 {
+	position: absolute;
+	top: 107%;
+	right: 2%;
+	width: 50px;
+	height: 50px;
+}
+
+.bubble2 {
+	position: absolute;
+	top: 80%;
+	right: 25%;
+	width: 50px;
+	height: 50px;
+}
+
+.bubble3 {
+	position: absolute;
+	top: 185%;
+	right: 65%;
+	width: 130px;
+	height: 130px;
 }

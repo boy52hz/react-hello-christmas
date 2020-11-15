@@ -2,42 +2,61 @@
     position: fixed;
     width: 100%;
     padding: 0 20px;
-    height: 85px;
+    height: 105px;
     display: flex;
-    justify-content: space-between;
     transition:  .3s ease-in-out;
     z-index: 99;
-    background-color: #0B4839;
+    background-color: rgba($color: #000000, $alpha: .2);
 
     &__logo {
-        img {
-            display: inline;
-            width: 150px;
-        }
+        margin: 2px;
+        width: 430px;
+        background-color: #8C0200;
+        border-radius: 50px;
 
-        .label {
-            display: inline;
-            color: #ffffff;
-            font-size: 20px;
-        }
+    img {
+        margin: -1% 0 0 -73%;
+        width: 250px;
     }
 
+    .label {
+        font-family: 'Playfair Display', serif;
+        display: inline;
+        color: #ffffff;
+        font-size: 24px;
+        align-content: center;
+    }
+
+    p {
+        margin-left: 28%;
+        width: 50%;
+        position: relative; top: -120%;
+        line-height: 30px;
+        text-shadow: 2px 1px 5px rgba($color: #ffffff, $alpha: .7);
+    }
+
+    .chrismas {
+        font-size: 40pt;
+    }
+
+    em {
+        margin-left: 20%;
+    }
+}
+
     &__menu {
-        font-family: 'Bebas Neue', cursive;
+        font-family: 'Playfair Display', serif;
         list-style: none;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
         height: 100%;
         color: var(--light-color);
-
     }
     
     &__item {
-        font-weight: 700;
         font-size: 22pt;
-        padding: 20px 2em;
-        letter-spacing: .2em;
+        padding: 15px 42px;
 
         a {
             color: inherit;
@@ -97,5 +116,5 @@
 }
 
 .scrolled {
-    background-color: rgba($color: #000000, $alpha: .7);
+    background-color: rgba($color: #000000, $alpha: .8);
 }

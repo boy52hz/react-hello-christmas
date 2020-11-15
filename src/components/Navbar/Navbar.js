@@ -41,7 +41,7 @@ class Navbar extends React.Component {
       <nav className={`Navbar ${ this.state.scrolled ? 'scrolled' : '' }`}>
         <div className="Navbar__logo">
           <img src={ Logo } alt="Web logo"/>
-          <div className="label">Christmas</div>
+          <div className="label"><p className="chrismas">ChristmaS</p><p><em>- F e s t i v a l -</em></p></div>
         </div>
         <HamburgerMenu
           className="hamburger"
