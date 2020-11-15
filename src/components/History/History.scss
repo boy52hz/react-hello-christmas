@@ -40,13 +40,7 @@
   	.History__gallery {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
-
-		img {
-			width: 270px;
-			border-radius: 20px;
-			filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
-		}
+		justify-content: space-between;
   	}
   
   	.History__gallery img {
