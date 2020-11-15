@@ -22,16 +22,18 @@
         }
 
         &__box {
+            position: relative;
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
             background: rgba(0, 0, 0, 0.7);
             border-radius: 20px;
+            padding: 0 5em;
             
             .Countdown__item {
                 font-family: 'Karla', sans-serif;
                 color: var(--light-color);
-                font-size: 4rem;
+                font-size: 48px;
                 height: 100%;
                 padding: .5em;
 
@@ -48,7 +50,23 @@
                     padding: 0 1rem;
                     font-size: 150px;
                     border-radius: 20px;
+                    min-width: 200px;
                 }
+            }
+
+            #candycane {
+                position: absolute;
+                width: 120px;
+                right: -30px;
+                top: -15px;
+            }
+
+            #lightwire {
+                position: absolute;
+                width: 400px;
+                left: 10px;
+                top: 5px;
+                transform: rotateZ(-20deg);
             }
         }
     }
