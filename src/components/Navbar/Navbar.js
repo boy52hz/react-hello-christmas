@@ -37,7 +37,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <nav className={`Navbar ${ this.state.scrolled ? 'scrolled' : '' }`}>
-        <div className="Navbar__logo">Logo</div>
+        <div className="Navbar__logo"></div>
         <HamburgerMenu
           className="hamburger"
           isOpen={this.state.open}
@@ -58,6 +58,7 @@ class Navbar extends React.Component {
           <li className="Navbar__item"><a href="#History">History</a></li>
           <li className="Navbar__item"><a href="#Countdown">Countdown</a></li>
           <li className="Navbar__item"><a href="#Wish">Wish</a></li>
+          <li className="Navbar__item"><a href="#About">About us</a></li>
         </Scrollspy>
       </nav>
     );
