@@ -12,6 +12,8 @@ import C2Back from '../../static/img/cards/c2_backreal.jpg';
 import C3Back from '../../static/img/cards/c3_backreal.jpg';
 import C4Back from '../../static/img/cards/c4_backreal.jpg';
 
+import bubble from '../../static/img/น้ำ.png';
+
 class HistorySection extends React.Component {
   render() {
     return (
@@ -41,6 +43,9 @@ class HistorySection extends React.Component {
             <FlipCard imgFront={ C4 } imgBack={ C4Back }/>
           </div>
         </div>
+        <img className="bubble1" src={ bubble } alt="bubble1" />
+        <img className="bubble2" src={ bubble } alt="bubble1" />
+        <img className="bubble3" src={ bubble } alt="bubble1" />
       </section>
     );
   }
