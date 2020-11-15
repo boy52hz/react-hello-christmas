@@ -3,7 +3,7 @@
   	justify-content: center;
   	align-items: center;
 	background-color: #274B6D;
-
+	position: relative;
 	  
 	.History__container {
 		padding: 2em;
@@ -11,81 +11,50 @@
 		max-width: 90%;
 
 		h1 {
-			margin-top: -50px;
 			font-family: 'Crimson Text', serif;
 			font-weight: 700;
 			font-size: 3rem;
 			color: #CED9DF;
-			text-shadow: 2px 2px 5px rgba($color: #ffffff, $alpha: .7);
+			text-shadow: 2px 2px 5px rgba(#ffffff, .7);
+			margin-bottom: 1.2rem;
 		}
 
 		p {
-			width: 90%;
-			margin-left: -20px;
-			margin-top: 1%;
-			padding: 1.2rem;
-			padding: 0 50px;
+			column-count: 2;
+			column-gap: 2em;
 			font-family: 'Cardo', serif;
 			font-size: 16pt;
 			color: #CED9DF;
-			
+			text-indent: 50px;
 			text-align: justify;
 		}
-
-		.p1 {
-			text-indent: 1em;
-			margin-left: -20px;
-		}
-
-  	}
-  
-  	.History__description {
-		display: flex;
-		justify-content: space-between;
-		text-align: left;
   	}
   
   	.History__gallery {
+		box-sizing: border-box;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-  	}
+		padding: 1.5rem;
+	}
 	  
-	@media screen and (max-width: 598px) {
+	@media screen and (max-width: 798px) {
 		.History__container {
 			margin-top: 4em;
 
 			h1 {
 				font-size: 2rem;
 			}
-		}
-		
-		.History__description {
-			flex-direction: column;
+
+			p {
+				column-count: 1;
+			}
 		}
 	}
 }
 
-.bubble1 {
-	position: absolute;
-	top: 107%;
-	right: 2%;
-	width: 50px;
-	height: 50px;
-}
-
-.bubble2 {
-	position: absolute;
-	top: 80%;
-	right: 25%;
-	width: 50px;
-	height: 50px;
-}
-
-.bubble3 {
-	position: absolute;
-	top: 185%;
-	right: 65%;
-	width: 130px;
-	height: 130px;
-}
+// .bubble {
+// 	position: absolute;
+// 	width: 50px;
+// 	height: 50px;
+// }

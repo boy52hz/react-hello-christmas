@@ -12,7 +12,7 @@ import C2Back from '../../static/img/cards/c2_backreal.jpg';
 import C3Back from '../../static/img/cards/c3_backreal.jpg';
 import C4Back from '../../static/img/cards/c4_backreal.jpg';
 
-import bubble from '../../static/img/น้ำ.png';
+// import bubble from '../../static/img/น้ำ.png';
 
 class HistorySection extends React.Component {
   render() {
@@ -20,22 +20,19 @@ class HistorySection extends React.Component {
       <section id="History">
         <div className="History__container">
           <h1>History of Christmas</h1>
-          <div className="History__description">
-            <p className="p1">Christmas is celebrated on December 25 and is both a sacred 
-            religious holiday and a worldwide cultural and commercial 
-            phenomenon. For two millennia, people around the world have 
-            been observing it with traditions and practices that are both 
-            religious and secular in nature. Christians celebrate Christmas
-            Day as the anniversary of the birth of Jesus of Nazareth,
-            </p>
-            <p>a spiritual leader whose teachings form the basis of their religion.
-            Popular customs include exchanging gifts, decorating Christmas 
-            trees, attending church, sharing meals with family and friends 
-            and, of course, waiting for Santa Claus to arrive. December 25–
-            Christmas Day–has been a federal holiday in the United States 
-            since 1870.
-            </p>
-          </div>
+          <p>Christmas is celebrated on December 25 and is both a sacred 
+          religious holiday and a worldwide cultural and commercial 
+          phenomenon. For two millennia, people around the world have 
+          been observing it with traditions and practices that are both 
+          religious and secular in nature. Christians celebrate Christmas
+          Day as the anniversary of the birth of Jesus of Nazareth,
+          a spiritual leader whose teachings form the basis of their religion.
+          Popular customs include exchanging gifts, decorating Christmas 
+          trees, attending church, sharing meals with family and friends 
+          and, of course, waiting for Santa Claus to arrive. December 25–
+          Christmas Day–has been a federal holiday in the United States 
+          since 1870.
+          </p>
           <div className="History__gallery">
             <FlipCard imgFront={ C1 } imgBack={ C1Back }/>
             <FlipCard imgFront={ C2 } imgBack={ C2Back }/>
@@ -43,9 +40,9 @@ class HistorySection extends React.Component {
             <FlipCard imgFront={ C4 } imgBack={ C4Back }/>
           </div>
         </div>
-        <img className="bubble1" src={ bubble } alt="bubble1" />
-        <img className="bubble2" src={ bubble } alt="bubble1" />
-        <img className="bubble3" src={ bubble } alt="bubble1" />
+        {/* <img className="bubble" src={ bubble } alt="bubble1"/>
+        <img className="bubble" src={ bubble } alt="bubble2"/>
+        <img className="bubble" src={ bubble } alt="bubble3"/> */}
       </section>
     );
   }
