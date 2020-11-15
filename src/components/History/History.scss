@@ -2,21 +2,33 @@
   	display: flex;
   	justify-content: center;
   	align-items: center;
-  	min-height: 100%;
-	background-color: var(--light-color);
+	background-color: #274B6D;
+
 	  
 	.History__container {
-		color: black;
-		max-width: 80%;
+		padding: 2em;
+		color: #ffffff;
+		max-width: 90%;
 
 		h1 {
+			margin-top: -50px;
+			font-family: 'Crimson Text', serif;
+			font-weight: 700;
 			font-size: 3rem;
+			color: #CED9DF;
 		}
 
 		p {
+			margin-top: 1%;
 			padding: 1.2rem;
-			font-size: 1rem;
+			padding: 0 40px;
+			font-family: 'Cardo', serif;
+			font-size: 16pt;
+			color: #CED9DF;
+			text-indent: 1em;
+			text-align: justify;
 		}
+
   	}
   
   	.History__description {
@@ -28,12 +40,8 @@
   	.History__gallery {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: space-between;
   	}
-  
-  	.History__gallery img {
-		padding: .8rem;
-	}
 	  
 	@media screen and (max-width: 598px) {
 		.History__container {

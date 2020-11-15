@@ -32,7 +32,6 @@ class Countdown extends React.Component {
     return (
       <section id="Countdown">
         <div className="Countdown__container">
-					<h1>Countdown before our Christmas!</h1>
           <div className="Countdown__box">
 						<div className="Countdown__item">
 							<div className="timer">{ state.days }</div>
