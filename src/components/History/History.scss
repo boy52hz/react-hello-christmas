@@ -2,11 +2,12 @@
   	display: flex;
   	justify-content: center;
   	align-items: center;
-  	min-height: 100%;
-	background-color: var(--light-color);
+	background-color: #274B6D;
+
 	  
 	.History__container {
-		color: black;
+		padding: 2em;
+		color: #ffffff;
 		max-width: 80%;
 
 		h1 {
