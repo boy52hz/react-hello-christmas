@@ -1,8 +1,11 @@
 img {
     cursor: pointer;
-    transition: .2s ease-out;
+    transition: .4s ease-out;
+    width: 320px;
+	border-radius: 20px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
 
-    &:hover, &:after {
+    &:hover {
         transform: scale(1.05);
     }
 }
