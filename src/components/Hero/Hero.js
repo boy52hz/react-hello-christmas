@@ -6,13 +6,8 @@ class HeroSection extends React.Component {
     return (
       <section id="Hero">
         <div className="Hero__container">
-          <h1>Merry Christmas!</h1>
-          <p>Veniam proident ullamco commodo dolore deserunt 
-          deserunt mollit exercitation culpa amet irure officia 
-          magna. Culpa consequat fugiat pariatur qui dolor commodo 
-          nostrud non sunt. Enim velit amet do in sint officia ex. 
-          Id amet ullamco fugiat laborum irure adipisicing consequat ipsum proident.
-          </p>
+          <h1>Merry Christmas</h1>
+          <p>let's countdown with us under the sea.</p>
         </div>
       </section>
     );
