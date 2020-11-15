@@ -15,7 +15,7 @@ class App extends React.Component {
         <Navbar/>
         <Hero/>
         {/* Triangle Seperator */}
-        <div className="App__triangle-sep"></div>
+        {/* <div className="App__triangle-sep"></div> */}
         <History/>
         <Countdown/>
         <Wish/>
