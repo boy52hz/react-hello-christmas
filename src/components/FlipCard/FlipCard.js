@@ -11,17 +11,18 @@ class FlipCard extends Component {
 		this.handleClick = this.handleClick.bind(this);
 	}
 	handleClick(e) {
-		e.preventDefault();
 		this.setState(oldState => ({ isFlipped: !oldState.isFlipped }));
 	}
 	render() {
 		const { isFlipped } = this.state;
 		const { imgFront, imgBack } = this.props;
 		return (
-			<ReactCardFlip isFlipped={ isFlipped } flipDirection="horizontal">
-        		<img className="flip" src={ imgFront } alt="Front img" onClick={ this.handleClick } style={ isFlipped ? { visibility: "hidden" }: null }/>
-				<img className="flip" src={ imgBack } alt="Back img" onClick={ this.handleClick } style={ !isFlipped ? { visibility: "hidden" }: null }/>
-      		</ReactCardFlip>
+			<div id="FlipCard" >
+				<ReactCardFlip isFlipped={ isFlipped } flipDirection="horizontal">
+        			<img src={ imgFront } alt="Front img" onClick={ this.handleClick } style={ isFlipped ? { visibility: "hidden" }: null }/>
+					<img src={ imgBack } alt="Back img" onClick={ this.handleClick } style={ !isFlipped ? { visibility: "hidden" }: null }/>
+      			</ReactCardFlip>
+			</div>
 		)
 	}
 }
