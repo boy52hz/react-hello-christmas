@@ -19,7 +19,7 @@
 		}
 
 		p {
-			
+			margin-top: 1%;
 			padding: 1.2rem;
 			padding: 0 40px;
 			font-family: 'Cardo', serif;
@@ -42,10 +42,6 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
   	}
-  
-  	.History__gallery img {
-		padding: .8rem;
-	}
 	  
 	@media screen and (max-width: 598px) {
 		.History__container {

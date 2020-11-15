@@ -1,11 +1,15 @@
 img {
+    margin-top: 10%;
     cursor: pointer;
     transition: .4s ease-out;
-    width: 320px;
+    width: 290px;
 	border-radius: 20px;
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+    padding: 10px;
+    background-color: #DCA04D;
 
     &:hover {
         transform: scale(1.05);
+        box-shadow: 0px 0px 20px #DCA04D;
     }
 }
