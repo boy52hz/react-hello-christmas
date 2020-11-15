@@ -12,6 +12,8 @@
         color: var(--light-color);
         text-align: center;
         margin: 2rem 0;
+        font-family: 'Cardo', serif;
+        font-size: var(--fs-header-alt);
     }
 
     .Countdown {
@@ -22,52 +24,30 @@
         &__box {
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
+            background: rgba(0, 0, 0, 0.7);
+            width: 1170px;
+            height: 410px;
             
             .Countdown__item {
                 color: var(--light-color);
                 font-size: 4rem;
                 padding: 2rem;
-    
+                height: 100%;
+
                 .title {
                     font-size: 2rem;
+                    font-weight: 500;
                     justify-content: center;
                     align-items: center;
+                    margin-bottom: 10px;
                 }
     
                 .timer {
+                    width: 210px;
+                    height: 250px;
+                    background: #A29F9F;
                     padding: 0 1rem;
-                }
-            }
-            
-            @media screen and (max-width: 790px) {
-                .Countdown__item .title {
-                    font-size: 1.8rem;
-                }
-            
-                .Countdown__item {
-                    font-size: 2.8rem;
-                }
-            }
-            
-            @media screen and (max-width: 670px) {
-                .Countdown__item .title {
-                    font-size: 1.2rem;
-                }
-            
-                .Countdown__item {
-                    font-size: 2rem;
-                }
-            }
-
-            @media screen and (max-width: 500px) {
-                flex-wrap: wrap;
-                .Countdown__item .title {
-                    font-size: 1.2rem;
-                }
-            
-                .Countdown__item {
-                    // flex: 1 1 80px;
-                    font-size: 2rem;
                 }
             }
         }
