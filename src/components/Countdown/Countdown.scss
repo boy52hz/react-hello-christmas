@@ -9,11 +9,11 @@
     background-size: 100%;;
 
     h1 {
-        color: var(--light-color);
+        color: white;
         text-align: center;
         margin: 2rem 0;
-        font-family: 'Cardo', serif;
-        font-size: var(--fs-header-alt);
+        font: bold 7em 'Playfair Display', serif;
+        letter-spacing: .1em;
     }
 
     .Countdown {
@@ -23,30 +23,32 @@
 
         &__box {
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-around;
+            flex-wrap: wrap;
             background: rgba(0, 0, 0, 0.7);
+            width: 1170px;
+            height: 410px;
             
             .Countdown__item {
+                font-family: 'Karla', sans-serif;
                 color: var(--light-color);
                 font-size: 4rem;
-                padding: 1rem;
+                padding: 10px 0 1em 0;
                 height: 100%;
 
                 .title {
-                    font-size: 2rem;
+                    font-size: .75em;
                     font-weight: 500;
                     justify-content: center;
                     align-items: center;
-                    margin-bottom: 10px;
+                    margin-bottom: 15px;
                 }
-                
+    
                 .timer {
                     width: 210px;
                     height: 250px;
                     background: #A29F9F;
                     padding: 0 1rem;
-                    font-size: 145px;
                 }
             }
         }
