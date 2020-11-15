@@ -27,6 +27,16 @@
         max-width: 80%;
     }
 
+    &__main {
+        display: block;
+        margin: 0 auto;
+
+        img {
+            width: 500px;
+            animation: animate-pulse 5s infinite;
+        }
+    }
+
     &__btn-group {
         margin-top: 1rem;
     }
@@ -41,5 +51,15 @@
         .Wish__container .Wish__main img {
             width: 200px;
         }
+    }
+}
+
+@keyframes animate-pulse {
+    50% {
+        transform: scale(1.1) rotateZ(5deg);
+    }
+
+    100% {
+        transform: scale(1.0);
     }
 }
