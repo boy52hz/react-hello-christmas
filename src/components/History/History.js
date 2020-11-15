@@ -1,5 +1,16 @@
 import React from 'react';
+import FlipCard from '../FlipCard/FlipCard';
 import './History.scss';
+
+import C1 from '../../static/img/cards/c1_frontreal-01.jpg';
+import C2 from '../../static/img/cards/c2_frontreal-01.jpg';
+import C3 from '../../static/img/cards/c3_frontreal-01.jpg';
+import C4 from '../../static/img/cards/c4_frontreal-01.jpg';
+
+import C1Back from '../../static/img/cards/c1_backreal.jpg';
+import C2Back from '../../static/img/cards/c2_backreal.jpg';
+import C3Back from '../../static/img/cards/c3_backreal.jpg';
+import C4Back from '../../static/img/cards/c4_backreal.jpg';
 
 class HistorySection extends React.Component {
   render() {
@@ -22,10 +33,10 @@ class HistorySection extends React.Component {
             </p>
           </div>
           <div className="History__gallery">
-            <img src="https://source.unsplash.com/random/250x250" alt="Christmas 1"/>
-            <img src="https://source.unsplash.com/random/250x250" alt="Christmas 1"/>
-            <img src="https://source.unsplash.com/random/250x250" alt="Christmas 1"/>
-            <img src="https://source.unsplash.com/random/250x250" alt="Christmas 1"/>
+            <FlipCard imgFront={ C1 } imgBack={ C1Back }/>
+            <FlipCard imgFront={ C2 } imgBack={ C2Back }/>
+            <FlipCard imgFront={ C3 } imgBack={ C3Back }/>
+            <FlipCard imgFront={ C4 } imgBack={ C4Back }/>
           </div>
         </div>
       </section>

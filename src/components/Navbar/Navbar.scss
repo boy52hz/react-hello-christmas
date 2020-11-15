@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-between;
     transition:  .3s ease-in-out;
+    z-index: 99;
 
     &__logo {
         padding: 12px;
