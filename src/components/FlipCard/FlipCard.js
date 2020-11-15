@@ -19,8 +19,8 @@ class FlipCard extends Component {
 		return (
 			<div id="FlipCard" >
 				<ReactCardFlip isFlipped={ isFlipped } flipDirection="horizontal">
-        			<img src={ imgFront } alt="Front img" onClick={ this.handleClick }/>
-					<img src={ imgBack } alt="Back img" onClick={ this.handleClick }/>
+        			<img src={ imgFront } alt="Front img" onClick={ this.handleClick } draggable="false"/>
+					<img src={ imgBack } alt="Back img" onClick={ this.handleClick } draggable="false"/>
       			</ReactCardFlip>
 			</div>
 		)
