@@ -13,11 +13,10 @@
         width: 150px;
         height: 150px;
         margin-top: 5px;
-        margin-left: 5%;
+        margin-left: -3%;
         background-image: url(./../../static/img/LOGO.png);
         background-repeat: no-repeat;
         background-size: 100%;
-
     }
     
     &__menu {
@@ -69,7 +68,6 @@
             justify-content: center;
             transform: translateX(0);
             transition: .3s ease-out;
-            background-color: greenyellow;
         }
 
         .hide {

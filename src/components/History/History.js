@@ -19,17 +19,19 @@ class HistorySection extends React.Component {
         <div className="History__container">
           <h1>History of Christmas</h1>
           <div className="History__description">
-            <p>Veniam proident ullamco commodo dolore deserunt 
-            deserunt mollit exercitation culpa amet irure officia 
-            magna. Culpa consequat fugiat pariatur qui dolor commodo 
-            nostrud non sunt. Enim velit amet do in sint officia ex. 
-            Id amet ullamco fugiat laborum irure adipisicing consequat ipsum proident.
+            <p className="p1">Christmas is celebrated on December 25 and is both a sacred 
+            religious holiday and a worldwide cultural and commercial 
+            phenomenon. For two millennia, people around the world have 
+            been observing it with traditions and practices that are both 
+            religious and secular in nature. Christians celebrate Christmas
+            Day as the anniversary of the birth of Jesus of Nazareth,
             </p>
-            <p>Veniam proident ullamco commodo dolore deserunt 
-            deserunt mollit exercitation culpa amet irure officia 
-            magna. Culpa consequat fugiat pariatur qui dolor commodo 
-            nostrud non sunt. Enim velit amet do in sint officia ex. 
-            Id amet ullamco fugiat laborum irure adipisicing consequat ipsum proident.
+            <p>a spiritual leader whose teachings form the basis of their religion.
+            Popular customs include exchanging gifts, decorating Christmas 
+            trees, attending church, sharing meals with family and friends 
+            and, of course, waiting for Santa Claus to arrive. December 25–
+            Christmas Day–has been a federal holiday in the United States 
+            since 1870.
             </p>
           </div>
           <div className="History__gallery">
