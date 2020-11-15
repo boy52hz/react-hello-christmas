@@ -1,12 +1,29 @@
 import React from 'react'
 import './Wish.scss';
 
+import { Modal } from 'react-bootstrap';
+
 import Socks from '../../static/img/socks.png';
 
 import Button from '../Button/Button';
 
 class Wish extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      modal: false
+    }
+    this.handleShow = this.handleShow.bind(this);
+    this.handleClose = this.handleClose.bind(this);
+  }
+  handleShow() {
+    this.setState({ modal: true });
+  }
+  handleClose() {
+    this.setState({ modal: false });
+  }
   render() {
+    const { modal } = this.state;
     return (
       <section id="Wish" className="Wish">
         <div className="Wish__container">
@@ -20,9 +37,21 @@ class Wish extends React.Component {
 					</div>
 
           <div className="Wish__btn-group">
-            <Button type="submit">Let's make a wish!</Button>
+            <Button type="submit" onClick={this.handleShow}>Let's make a wish!</Button>
           </div>
 				</div>
+
+        <Modal show={modal} onHide={this.handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Modal heading</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={this.handleClose}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
       </section>
     )
   }
