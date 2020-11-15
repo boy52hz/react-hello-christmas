@@ -26,15 +26,14 @@
             justify-content: space-around;
             flex-wrap: wrap;
             background: rgba(0, 0, 0, 0.7);
-            width: 1170px;
-            height: 410px;
+            border-radius: 20px;
             
             .Countdown__item {
                 font-family: 'Karla', sans-serif;
                 color: var(--light-color);
                 font-size: 4rem;
-                padding: 10px 0 1em 0;
                 height: 100%;
+                padding: .5em;
 
                 .title {
                     font-size: .75em;
@@ -45,10 +44,10 @@
                 }
     
                 .timer {
-                    width: 210px;
-                    height: 250px;
                     background: #A29F9F;
                     padding: 0 1rem;
+                    font-size: 150px;
+                    border-radius: 20px;
                 }
             }
         }
