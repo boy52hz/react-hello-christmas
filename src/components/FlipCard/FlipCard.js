@@ -15,11 +15,13 @@ class FlipCard extends Component {
 		this.setState(oldState => ({ isFlipped: !oldState.isFlipped }));
 	}
 	render() {
+		const { isFlipped } = this.state;
+		const { imgFront, imgBack } = this.props;
 		return (
-			<ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="horizontal">
-        <img src={ this.props.imgFront } alt="Front img" onClick={ this.handleClick } style={ this.state.isFlipped ? { visibility: "hidden" }: null }/>
-				<img src={ this.props.imgBack } alt="Back img" onClick={ this.handleClick } style={ !this.state.isFlipped ? { visibility: "hidden" }: null }/>
-      </ReactCardFlip>
+			<ReactCardFlip isFlipped={ isFlipped } flipDirection="horizontal">
+        		<img clas src={ imgFront } alt="Front img" onClick={ this.handleClick } style={ isFlipped ? { visibility: "hidden" }: null }/>
+				<img src={ imgBack } alt="Back img" onClick={ this.handleClick } style={ !isFlipped ? { visibility: "hidden" }: null }/>
+      		</ReactCardFlip>
 		)
 	}
 }
