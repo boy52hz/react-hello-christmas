@@ -6,7 +6,7 @@
     justify-content: space-around;
     transition: .3s ease-in-out;
     z-index: 99;
-    background-color: rgba( #000000, .2);
+    background-color: rgba(#000000, .2);
 
     &__logo {
         width: 220px;
@@ -47,7 +47,7 @@
         cursor: pointer;
     }
 
-    @media screen and (max-width: 598px) {
+    @media screen and (max-width: 1066px) {
         .hamburger {
             display: block;
         }
