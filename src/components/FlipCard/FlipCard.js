@@ -11,7 +11,6 @@ class FlipCard extends Component {
 		this.handleClick = this.handleClick.bind(this);
 	}
 	handleClick(e) {
-		e.preventDefault();
 		this.setState(oldState => ({ isFlipped: !oldState.isFlipped }));
 	}
 	render() {
