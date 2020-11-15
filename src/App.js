@@ -9,20 +9,9 @@ import Wish from './components/Wish/Wish';
 import Footer from './components/Footer/Footer';
 
 class App extends React.Component {
-  state = {
-    showSlogan: true  
-  }
-
-  componentDidMount() {
-    setTimeout(() => {
-      this.setState({ showSlogan: false });
-    }, 2000)
-  }
-
   render() {
     return (
-      <div className="App">               
-        <div style={ this.state.showSlogan ? { display: 'block' } : { display: 'none' } }>KUYY</div>                             
+      <div className="App">                                          
         <Navbar/>
         <Hero/>
         <History/>
