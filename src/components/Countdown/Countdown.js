@@ -52,12 +52,7 @@ class Countdown extends React.Component {
 					<img src={ WaterDrop } alt="Waterdrop 3"/>
 				</div>
 				<div className="Countdown__container">
-					<div id="head">
-						<img id="clock" src={Clock} alt="clock1" />
-						<h1>Countdown</h1>
-						<img id="clock" src={Clock} alt="clock2" />
-					</div>
-
+					<h1>Countdown</h1>
 					<div className="Countdown__box">
 						<img id="candycane" src={CandyCane} alt="Candy Cane" />
 						<img id="lightwire" src={LigthWire} alt="Light Wire" />
