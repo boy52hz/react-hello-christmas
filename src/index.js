@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 /* CSS Package */
 import './index.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'animate.css/animate.css';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
