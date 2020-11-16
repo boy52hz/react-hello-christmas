@@ -12,8 +12,10 @@ class Navbar extends React.Component {
     scrolled: false
   }
 
-  handleClick() {
+  handleClick(e) {
+    e.preventDefault();
     let open = this.state.open;
+
     this.setState({ open: !open })
   }
 
