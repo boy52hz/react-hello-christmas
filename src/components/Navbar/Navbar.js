@@ -4,7 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import HamburgerMenu from 'react-hamburger-menu';
 import './Navbar.scss';
 
-import Logo from '../../static/img/LOGO2.png';
+import Logo from '../../static/img/nav-logo.png';
 
 class Navbar extends React.Component {
   state = {
@@ -59,11 +59,6 @@ class Navbar extends React.Component {
           items={ ['Hero', 'History', 'Countdown', 'Wish', 'Footer'] } 
           currentClassName="is-current"
         >
-          {/* <li className="Navbar__item"><a href="#Hero">Home</a></li>
-          <li className="Navbar__item"><a href="#History">History</a></li>
-          <li className="Navbar__item"><a href="#Countdown">Countdown</a></li>
-          <li className="Navbar__item"><a href="#Wish">Wish</a></li>
-          <li className="Navbar__item"><a href="#Footer">About us</a></li> */}
           <AnchorLink className="Navbar__item" href='#Hero'>Home</AnchorLink>
           <AnchorLink className="Navbar__item" href='#History'>History</AnchorLink>
           <AnchorLink className="Navbar__item" href='#Countdown'>Countdown</AnchorLink>
