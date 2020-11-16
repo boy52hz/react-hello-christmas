@@ -1,0 +1,17 @@
+#Footer {
+    position: relative;
+    background-color: #6E0E29;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.Footer {
+    &__container {
+        max-width: 80%;
+
+        ul {
+            list-style-type: none;
+        }
+    }
+}
