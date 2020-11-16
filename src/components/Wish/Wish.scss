@@ -1,13 +1,14 @@
 .Wish {
     padding: 2rem;
+    background: url('../../static/img/iceberg.png') no-repeat bottom;
     background-color: #9AC0CB;
-    min-height: 100%;
+    min-height: 80%;
 
     .header {
         margin: 50px 0;
 
         h1 {
-            font-size: 54px;
+            font-size: 50px;
             font-family: 'Cardo', serif;
             font-weight: 700;
             margin-bottom: 1rem;
@@ -16,14 +17,14 @@
     
         p {
             font-family: 'Cardo', serif;
-            font-size: 24px;
+            font-size: 28px;
             font-weight: 400;
         }
     }
 
     &__container {
         display: block;
-        margin: 0 auto;
+        margin: 5vh auto;
         max-width: 80%;
     }
 
