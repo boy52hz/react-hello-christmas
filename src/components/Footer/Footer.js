@@ -20,11 +20,6 @@ import SmallBellRightCut from '../../static/img/about-us/bellrightcut.png';
 
 import Logo from '../../static/img/about-us/logo.png';
 
-
-
-
-
-
 class Footer extends React.Component {
 	render() {
 		return (
@@ -62,7 +57,7 @@ class Footer extends React.Component {
 						<p class="work">Infrastructure</p>
 					</li>
 				</ul>
-				<img class="big-tree" src={ BigTree } alt="big tree"/>
+				{/* <img class="big-tree" src={ BigTree } alt="big tree"/>
 				<img class="small-tree" src={ SmallTree } alt="small tree"/>
 				<img class="small-tree-right" src={ SmallTreeRight } alt="small tree right"/>
 				<img class="small-tree-centerright" src={ SmallTreeCenterRight } alt="small tree center right"/>
@@ -72,7 +67,7 @@ class Footer extends React.Component {
 				<img class="small-bell-right" src={ SmallBellRight } alt="small bell right"/>
 				<img class="small-bell-left2" src={ SmallBellLeft } alt="small bell left2"/>
 				<img class="small-bell-right-cut" src={ SmallBellRightCut } alt="small bell right cut"/>
-				<img class="logo-hello"src={ Logo } alt="logo"/>
+				<img class="logo-hello"src={ Logo } alt="logo"/> */}
 			</section>
 		);
 	}

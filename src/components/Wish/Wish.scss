@@ -49,7 +49,7 @@
             }
 
             &:active {
-                background: url('../../static/img/button/wish_button_clicked.png');
+                background: url('../../static/img/button/wish_button_clicked.png') no-repeat;
                 background-size: 100%;
                 width: 525px;
                 height: 166px;
@@ -57,14 +57,22 @@
         }
     }
 
-    @media (max-width: 500px) {
-        .Wish__container .Wish__main img {
+    @media screen and (max-width: 500px) {
+        .Wish__container img {
             width: 250px;
         }
-    }   
+        .Wish__button {
+            width: 250px;
+            height: 100px;
+            &:active {
+                width: 250px;
+                height: 100px;
+            }
+        }
+    }
 
-    @media (max-width: 420px) {
-        .Wish__container .Wish__main img {
+    @media screen and (max-width: 420px) {
+        .Wish__container img {
             width: 200px;
         }
     }

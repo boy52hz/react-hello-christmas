@@ -32,24 +32,32 @@
 		}
 	}
 
-	@media (max-width: 1113px) {
+	@media screen and (max-width: 1113px) {
 		.Hero__container {
 			h1 { font-size: 58pt; }
 			p { font-size: 28pt; }
 		}
 	}
 
-	@media (max-width: 759px) {
+	@media screen and (max-width: 759px) {
 		.Hero__container {
 			h1 { font-size: 52pt; }
 			p { font-size: 24pt; }
 		}
 	}
 
-	// @media (max-width: 629px) {
-	// 	.Hero__container {
-	// 		h1 { font-size: 52pt; }
-	// 		p { font-size: 22pt; }
-	// 	}
-	// }
+	@media screen and (max-width: 629px) {
+		.Hero__container {
+			h1 { font-size: 48pt; }
+			p { font-size: 22pt; }
+		}
+	}
+
+	@media screen and (max-width: 320px) {
+		.Hero__container {
+			h1 { font-size: 38pt; }
+			p { font-size: 18pt; }
+		}
+	}
+
 }
