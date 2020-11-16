@@ -28,15 +28,13 @@
     &__item {
         font-size: 28px;
         margin-right: 40px; 
-
-        a {
-            color: inherit;
-            text-decoration: none;
-            transition: .2s ease-out;
-        }
+        text-decoration: none;
+        transition: .2s ease-out;
+        color: #ffffff;
 
         &:hover {
             color: red;
+            text-decoration: none;
         }
     }
 
