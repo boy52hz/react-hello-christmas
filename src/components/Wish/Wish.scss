@@ -1,8 +1,10 @@
 .Wish {
     padding: 2rem;
     background: url('../../static/img/iceberg.png') no-repeat bottom;
+    background-size: 50%;
     background-color: #9AC0CB;
-    min-height: 80%;
+    background-position: left bottom;
+    min-height: 120%;
 
     .header {
         margin: 50px 0;
@@ -16,9 +18,9 @@
         }
     
         p {
-            font-family: 'Cardo', serif;
-            font-size: 28px;
-            font-weight: 400;
+            font-family: 'Crimson Text', serif;
+            font-size: 32px;
+            font-weight: 700;
         }
     }
 
@@ -33,7 +35,7 @@
         margin: 0 auto;
 
         img {
-            width: 400px;
+            width: 500px;
             animation: animate-pulse 5s infinite;
             margin: 1em 0;
         }

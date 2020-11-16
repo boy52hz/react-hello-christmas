@@ -4,13 +4,14 @@ import './Countdown.scss';
 import CandyCane from '../../static/img/candycane.png';
 import LigthWire from '../../static/img/lightwire.png';
 import WaterDrop from '../../static/img/waterdrop.png';
+import Clock from '../../static/img/clock.gif';
 
-const timerGlow = [
-	{ boxShadow: "0px 0px 5px 8px rgba(224, 53, 187, 0.8)" },
-	{ boxShadow: "0px 0px 5px 8px rgba(53, 224, 224, 0.8)" },
-	{ boxShadow: "0px 0px 5px 8px rgba(216, 233, 116, 0.8)" },
-	{ boxShadow: "0px 0px 5px 8px rgba(92, 255, 177, 0.8)" }
-]
+// const timerGlow = [
+// 	{ boxShadow: "0px 0px 5px 8px rgba(224, 53, 187, 0.8)" },
+// 	{ boxShadow: "0px 0px 5px 8px rgba(53, 224, 224, 0.8)" },
+// 	{ boxShadow: "0px 0px 5px 8px rgba(216, 233, 116, 0.8)" },
+// 	{ boxShadow: "0px 0px 5px 8px rgba(92, 255, 177, 0.8)" }
+// ]
 
 class Countdown extends React.Component {
 	state = {
@@ -49,26 +50,30 @@ class Countdown extends React.Component {
 					<img src={ WaterDrop } alt="Waterdrop 3"/>
 				</div>
 				<div className="Countdown__container">
-					<h1>Countdown</h1>
+					<div id="head">
+						<img id="clock" src={Clock} alt="clock1" />
+						<h1>Countdown</h1>
+						<img id="clock" src={Clock} alt="clock2" />
+					</div>
 
 					<div className="Countdown__box">
 						<img id="candycane" src={CandyCane} alt="Candy Cane" />
 						<img id="lightwire" src={LigthWire} alt="Light Wire" />
 						<div className="Countdown__item">
 							<div className="title">Days</div>
-							<div className="timer" style={timerGlow[0]}>{state.days}</div>
+							<div className="timer" >{state.days}</div>
 						</div>
 						<div className="Countdown__item">
 							<div className="title">Hours</div>
-							<div className="timer" style={timerGlow[1]}>{state.hours}</div>
+							<div className="timer" >{state.hours}</div>
 						</div>
 						<div className="Countdown__item">
 							<div className="title">Minutes</div>
-							<div className="timer" style={timerGlow[2]}>{state.minutes}</div>
+							<div className="timer" >{state.minutes}</div>
 						</div>
 						<div className="Countdown__item">
 							<div className="title">Seconds</div>
-							<div className="timer" style={timerGlow[3]}>{state.seconds}</div>
+							<div className="timer" >{state.seconds}</div>
 						</div>
 					</div>
 				</div>

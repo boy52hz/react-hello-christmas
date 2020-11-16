@@ -3,7 +3,7 @@ import Scrollspy from 'react-scrollspy';
 import HamburgerMenu from 'react-hamburger-menu';
 import './Navbar.scss';
 
-import Logo from '../../static/img/nav-logo.png';
+import Logo from '../../static/img/LOGO2.png';
 
 class Navbar extends React.Component {
   state = {
@@ -39,7 +39,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <nav className={`Navbar ${ this.state.scrolled ? 'scrolled' : '' }`}>
-        <img className="Navbar__logo" src={ Logo } alt="Navbar logo" />
+        <img className="Navbar__logo" src={ Logo } alt="logo" />
         <HamburgerMenu
           className="hamburger"
           isOpen={this.state.open}
