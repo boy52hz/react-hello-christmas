@@ -2,109 +2,69 @@
     color: #ffffff;
     position: relative;
     background-color: #6E0E29;
-    height: 340px;
-    align-items: center;
-    ul{
-        list-style: none;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 75px 140px 0px 190px;
-        img{
-            width: 100px;
-            border-radius: 50px;
-            transition: .3s ease-out;
-            &:hover {
-                transform: scale(1.05);
-                box-shadow: 0px 0px 10px #DCA04D;
-            }
-        }
-        .name{
-            padding-top: 2px;
-            font-size: 18pt;
-            font-family: 'Playfair Display', serif;
-        }
-        .work{
-            margin: -20px;
-            font-size: 12pt;
-            font-family: 'Playfair Display', serif;
-        }
-    }
+    font-family: 'Playfair Display', serif;
+
     .big-bell{
         position: absolute;
-        bottom: 0px;
-        left: -6rem;
+        bottom: 0;
+        left: -1.3in;
         width: 20%;
+        z-index: 1;
     }
-    .big-tree{
-        position: absolute;
-        bottom : 0px;
-        right: 40px;
-        width: 8%;
+
+    @media screen and (max-width: 1024px) {
+        .big-bell { top: -1in; }
     }
-    .small-tree{
-        position: absolute;
-        bottom : 0px;
-        right: 130px;
-        width: 5%;
+
+    @media screen and (max-width: 768px) {
+        .big-bell { left: -1in; }
     }
-    .logo-hello{
-        position: absolute;
-        width: 9%;
-        bottom: 12px;
-        right: 200px; 
+
+    @media screen and (max-width: 425px) {
+        .big-bell { display: none; }
     }
-    .small-tree-cut{
-        position: absolute;
-        width: 7%;
-        bottom: 0px;
-    }
-    .small-bell-right{
-        position: absolute;
-        width: 4%;
-        top: -2em;
-        left: 450px;
-    }
-    .small-bell-right-cut{
-        position: absolute;
-        width: 6%;
-        bottom: 0px;
-        right: 450px;
-    }
-    .small-bell-left{
-        position: absolute;
-        width: 5%;
-        top: -2em;
-        right: 525px;
-    }
-    .small-tree-right-cut{
-        position: absolute;
-        width: 5%;
-        bottom: 0px;
-        left: 350px;
-    }
-    .small-bell-left2{
-        position: absolute;
-        width: 3%;
-        bottom: 30px;
-        left: 575px;
-    }
-    .small-tree-right{
-        position: absolute;
-        width: 3%;
-        top: -2em;
-        right: 275px;
-    }
-    .small-tree-left{
-        position: absolute;
-        width: 3%;
-        top: -2em;
-        left: 675px;
-    }
-    .small-tree-centerright{
-        position: absolute;
-        width: 2%;
-        left: 690px;
-        top: 28px;
+}
+
+.Footer {
+    &__container {
+        margin: 0 auto;
+        max-width: 80%;
+        padding: 1.2rem;
+
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            min-height: 339px;
+            margin: 0; // Reset ul margin
+    
+            img{
+                width: 100px;
+                border-radius: 50px;
+                transition: .3s ease-out;
+                &:hover {
+                    transform: scale(1.05);
+                    box-shadow: 0px 0px 10px #DCA04D;
+                }
+            }
+    
+            li {
+                line-height: 12px;
+            }
+    
+            .info {
+                margin: 1.5rem 0;
+            }
+    
+            .name {
+                font-size: 20px;
+                
+            }
+            .work {
+                font-size: 18px;
+            }
+        }
     }
 }

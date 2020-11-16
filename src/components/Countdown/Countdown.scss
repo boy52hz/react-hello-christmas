@@ -13,7 +13,7 @@
         color: white;
         text-align: center;
         margin: 2rem 0;
-        font: bold 7em 'Playfair Display', serif;
+        font: bold 8vw 'Playfair Display', serif;
         letter-spacing: .1em;
         // text-shadow: 2px 2px 10px rgba($color: #07043a, $alpha: .7);
         animation: krapib 2s linear infinite;
@@ -102,6 +102,14 @@
                 transform: rotateZ(-20deg);
             }
         }
+    }
+
+    @media screen and (max-width: 425px) {
+        .waterdrop img, #lightwire { display: none; }
+    }
+
+    @media screen and (max-width: 768px) {
+        .waterdrop > img { width: 100px }
     }
 }
 

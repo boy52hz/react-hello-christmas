@@ -20,49 +20,58 @@ import SmallBellRightCut from '../../static/img/about-us/bellrightcut.png';
 
 import Logo from '../../static/img/about-us/logo.png';
 
-
-
-
-
-
 class Footer extends React.Component {
 	render() {
 		return (
 			<section id="Footer">
 				<img class="big-bell" src={ Bell } alt="big bell"/>	
-				<ul>
-					<li>
-						<img src={ Yok } alt="Yok"/>
-						<p class="name">YOK</p>
-						<p class="work">Web Design</p>
-					</li>
-					<li>
-						<img src={ Prew } alt="Prew"/>
-						<p class="name">PREW</p>
-						<p class="work">Web Design</p>
-					</li>
-					<li>
-						<img src={ Spy } alt="Spy"/>
-						<p class="name">SPY</p>
-						<p class="work">Front End</p>
-					</li>
-					<li>
-						<img src={ Poi } alt="Poi"/>
-						<p class="name">POI</p>
-						<p class="work">Front End</p>
-					</li>
-					<li>
-						<img src={ Ben } alt="Ben"/>
-						<p class="name">BEN</p>
-						<p class="work">Front End</p>
-					</li>
-					<li>
-						<img src={ J } alt="J"/>
-						<p class="name">J</p>
-						<p class="work">Infrastructure</p>
-					</li>
-				</ul>
-				<img class="big-tree" src={ BigTree } alt="big tree"/>
+				<div className="Footer__container">
+					<ul>
+						<li>
+							<img src={ Yok } alt="Yok"/>
+							<div className="info">
+								<p class="name">YOK</p>
+								<p class="work">Web Design</p>
+							</div>
+						</li>
+						<li>
+							<img src={ Prew } alt="Prew"/>
+							<div className="info">
+								<p class="name">PREW</p>
+								<p class="work">Web Design</p>
+							</div>
+						</li>
+						<li>
+							<img src={ Spy } alt="Spy"/>
+							<div className="info">
+								<p class="name">SPY</p>
+								<p class="work">Front End</p>
+							</div>
+						</li>
+						<li>
+							<img src={ Poi } alt="Poi"/>
+							<div className="info">
+								<p class="name">POI</p>
+								<p class="work">Front End</p>
+							</div>
+						</li>
+						<li>
+							<img src={ Ben } alt="Ben"/>
+							<div className="info">
+								<p class="name">BEN</p>
+								<p class="work">Front End</p>
+							</div>
+						</li>
+						<li>
+							<img src={ J } alt="J"/>
+							<div className="info">
+								<p class="name">J</p>
+								<p class="work">Infrastructure</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				{/* <img class="big-tree" src={ BigTree } alt="big tree"/>
 				<img class="small-tree" src={ SmallTree } alt="small tree"/>
 				<img class="small-tree-right" src={ SmallTreeRight } alt="small tree right"/>
 				<img class="small-tree-centerright" src={ SmallTreeCenterRight } alt="small tree center right"/>
@@ -72,7 +81,7 @@ class Footer extends React.Component {
 				<img class="small-bell-right" src={ SmallBellRight } alt="small bell right"/>
 				<img class="small-bell-left2" src={ SmallBellLeft } alt="small bell left2"/>
 				<img class="small-bell-right-cut" src={ SmallBellRightCut } alt="small bell right cut"/>
-				<img class="logo-hello"src={ Logo } alt="logo"/>
+				<img class="logo-hello"src={ Logo } alt="logo"/> */}
 			</section>
 		);
 	}
