@@ -1,5 +1,7 @@
 import React from 'react';
 import './Countdown.scss';
+import whale from '../../static/img/วาฬคู่ฟองน้ำตรงเคาท์ดาวน์.png';
+import light from '../../static/img/ไฟ.gif';
 
 import CandyCane from '../../static/img/candycane.png';
 import LigthWire from '../../static/img/lightwire.png';

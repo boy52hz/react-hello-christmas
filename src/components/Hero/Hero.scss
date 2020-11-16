@@ -13,14 +13,26 @@
 		margin-top: -12%;
 		color: var(--light-color);
 		max-width: 80%;
+		
 
 		h1 {
 			font-family: 'Playfair Display', serif;
 			font-weight: 700;
 			font-size: var(--fs-header);
-			color: #FFC700;
-			text-shadow: 7px 7px 0px #8c0200cc;
-			transition: .2s ease-out;
+			color: #e7c83d;
+			text-shadow: var(--shadow-header);
+			animation: drop 2s;
+		}
+
+		@keyframes drop {
+			0% {
+				opacity: 0;
+				transform: translateY(-100%);
+			}
+			100% {
+				opacity: 1;
+				transform: translateY(0);
+			}
 		}
 
 		p {
@@ -28,7 +40,7 @@
 			font-family: 'Crimson Text', serif;
 			font-size: var(--fs-title);
 			text-shadow: 2px 2px 5px rgba($color: #000000, $alpha: .7);
-			transition: .2s ease-out;
+			animation: drop 1s;
 		}
 	}
 

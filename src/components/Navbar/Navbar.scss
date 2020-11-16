@@ -3,10 +3,9 @@
     width: 100%;
     height: 100px;
     display: flex;
-    justify-content: space-around;
-    transition: .3s ease-in-out;
+    transition:  .3s ease-in-out;
     z-index: 99;
-    background-color: rgba(#000000, .2);
+    background-color: rgba($color: #000000, $alpha: .2);
 
     &__logo {
         height: 120%;
@@ -16,13 +15,29 @@
         transition: .1s ease-out;
     }
 
+    p {
+        margin-left: 28%;
+        width: 50%;
+        position: relative; top: -130%;
+        line-height: 30px;
+        text-shadow: 2px 1px 5px rgba($color: #ffffff, $alpha: .7);
+    }
+
+    .chrismas {
+        font-size: 40pt;
+    }
+
+    em {
+        margin-left: 20%;
+    }
+}
+
     &__menu {
+        font-family: 'Playfair Display', serif;
+        list-style: none;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: center;
         align-items: center;
-        list-style: none;
-        font-family: 'Playfair Display', serif;
         height: 100%;
         width: 65%;
         color: var(--light-color);
@@ -55,24 +70,23 @@
         cursor: pointer;
     }
 
-    @media screen and (max-width: 1066px) {
+    @media screen and (max-width: 598px) {
         .hamburger {
             display: block;
         }
 
-        .Navbar {
-            &__menu {
-                flex-flow: column nowrap;
-                background: rgb(40, 40, 40);
-                position: fixed;
-                line-height: 60px;
-                top: 0;
-                right: 0;
-                height: 100vh;
-                width: 300px;
-                transform: translateX(0);
-                transition: transform .3s ease-out;
-            }
+        .Navbar__menu {
+            text-align: left;
+            flex-flow: column nowrap;
+            background: rgb(40, 40, 40);
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 300px;
+            justify-content: center;
+            transform: translateX(0);
+            transition: .3s ease-out;
         }
 
         .hide {
