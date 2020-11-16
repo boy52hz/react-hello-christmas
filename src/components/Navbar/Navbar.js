@@ -1,5 +1,6 @@
 import React from 'react'
 import Scrollspy from 'react-scrollspy';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import HamburgerMenu from 'react-hamburger-menu';
 import './Navbar.scss';
 
@@ -11,8 +12,10 @@ class Navbar extends React.Component {
     scrolled: false
   }
 
-  handleClick() {
+  handleClick(e) {
+    e.preventDefault();
     let open = this.state.open;
+
     this.setState({ open: !open })
   }
 
@@ -56,11 +59,16 @@ class Navbar extends React.Component {
           items={ ['Hero', 'History', 'Countdown', 'Wish', 'Footer'] } 
           currentClassName="is-current"
         >
-          <li className="Navbar__item"><a href="#Hero">Home</a></li>
+          {/* <li className="Navbar__item"><a href="#Hero">Home</a></li>
           <li className="Navbar__item"><a href="#History">History</a></li>
           <li className="Navbar__item"><a href="#Countdown">Countdown</a></li>
           <li className="Navbar__item"><a href="#Wish">Wish</a></li>
-          <li className="Navbar__item"><a href="#Footer">About us</a></li>
+          <li className="Navbar__item"><a href="#Footer">About us</a></li> */}
+          <AnchorLink className="Navbar__item" href='#Hero'>Home</AnchorLink>
+          <AnchorLink className="Navbar__item" href='#History'>History</AnchorLink>
+          <AnchorLink className="Navbar__item" href='#Countdown'>Countdown</AnchorLink>
+          <AnchorLink className="Navbar__item" href='#Wish'>Wish</AnchorLink>
+          <AnchorLink className="Navbar__item" href='#Footer'>About us</AnchorLink>
         </Scrollspy>
       </nav>
     );
