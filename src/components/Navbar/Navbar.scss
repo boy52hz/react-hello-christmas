@@ -53,19 +53,17 @@
         }
 
         .Navbar {
-            position: relative;
             &__menu {
-                text-align: left;
                 flex-flow: column nowrap;
                 background: rgb(40, 40, 40);
                 position: fixed;
+                line-height: 60px;
                 top: 0;
                 right: 0;
                 height: 100vh;
                 width: 300px;
-                justify-content: center;
                 transform: translateX(0);
-                transition: .3s ease-out;
+                transition: transform .3s ease-out;
             }
         }
 
