@@ -53,14 +53,14 @@ class Navbar extends React.Component {
         />
         <Scrollspy 
           className={ this.state.open ? 'Navbar__menu' : 'Navbar__menu hide' }
-          items={ ['Hero', 'History', 'Countdown', 'Wish'] } 
+          items={ ['Hero', 'History', 'Countdown', 'Wish', 'Footer'] } 
           currentClassName="is-current"
         >
           <li className="Navbar__item"><a href="#Hero">Home</a></li>
           <li className="Navbar__item"><a href="#History">History</a></li>
           <li className="Navbar__item"><a href="#Countdown">Countdown</a></li>
           <li className="Navbar__item"><a href="#Wish">Wish</a></li>
-          <li className="Navbar__item"><a href="#About">About us</a></li>
+          <li className="Navbar__item"><a href="#Footer">About us</a></li>
         </Scrollspy>
       </nav>
     );

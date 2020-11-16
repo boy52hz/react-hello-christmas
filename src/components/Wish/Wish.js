@@ -27,16 +27,12 @@ class Wish extends React.Component {
     return (
       <section id="Wish" className="Wish">
         <div className="Wish__container">
-          <div className="header">
+          <div className="Wish__header">
             <h1>May Santa Claus bring everything you wished for.</h1>
             <p>What do you wish for ? We will send your request to Santa Claus ourselves.</p>
           </div>
-
-					<div className="Wish__main">
-						<img src={ Socks } alt="christmas sock"/>
-					</div>
-
-          <div className="Wish__btn-group">
+					<img src={ Socks } alt="christmas sock"/>
+          <div>
             <Button type="submit" onClick={this.handleShow}>Let's make a wish!</Button>
           </div>
 				</div>

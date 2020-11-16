@@ -1,46 +1,37 @@
-.Wish {
-    padding: 2rem;
+#Wish {
+    display: flex;
+  	justify-content: center;
+  	align-items: center;
     background: url('../../static/img/iceberg.png') no-repeat bottom;
     background-color: #9AC0CB;
-    min-height: 80%;
+    min-height: 100%;
 
-    .header {
-        margin: 50px 0;
-
-        h1 {
-            font-size: 50px;
-            font-family: 'Cardo', serif;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            padding: .8rem;
+    .Wish {
+        &__header {
+            h1 {
+                font-size: 50px;
+                font-family: 'Cardo', serif;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                padding: .8rem;
+            }
+        
+            p {
+                font-family: 'Cardo', serif;
+                font-size: 28px;
+                font-weight: 400;
+            }
         }
-    
-        p {
-            font-family: 'Cardo', serif;
-            font-size: 28px;
-            font-weight: 400;
+
+        &__container {
+            max-width: 80%;
+
+            img {
+                width: 400px;
+                animation: animate-pulse 5s infinite;
+                margin: 1em 0;
+            }
         }
-    }
-
-    &__container {
-        display: block;
-        margin: 5vh auto;
-        max-width: 80%;
-    }
-
-    &__main {
-        display: block;
-        margin: 0 auto;
-
-        img {
-            width: 400px;
-            animation: animate-pulse 5s infinite;
-            margin: 1em 0;
-        }
-    }
-
-    &__btn-group {
-        margin-top: 1rem;
     }
 
     @media (max-width: 500px) {
