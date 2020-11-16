@@ -1,9 +1,10 @@
 #Countdown {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100%;
-    background: url('../../static/img/BG\ \(2\).png') no-repeat;
+    background: url('../../static/img/background/countdown.jpg') no-repeat;
     background-position: bottom;
     background-color: #274B6D;
     background-size: 100%;;
@@ -14,6 +15,23 @@
         margin: 2rem 0;
         font: bold 7em 'Playfair Display', serif;
         letter-spacing: .1em;
+    }
+
+    .waterdrop {
+        img {
+            position: absolute;
+            width: 155px;
+            top: -.5in;
+            right: 1in;
+            animation: animateWater 5s linear infinite;
+        }
+
+        img + img {
+            position: absolute;
+            width: 100px;
+            left: 1in;
+            top: 1in;
+        }
     }
 
     .Countdown {
@@ -69,5 +87,20 @@
                 transform: rotateZ(-20deg);
             }
         }
+    }
+}
+
+@keyframes animateWater {
+    25% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
