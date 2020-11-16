@@ -1,12 +1,10 @@
 import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 import './Countdown.scss';
-import whale from '../../static/img/วาฬคู่ฟองน้ำตรงเคาท์ดาวน์.png';
-import light from '../../static/img/ไฟ.gif';
 
 import CandyCane from '../../static/img/candycane.png';
 import LigthWire from '../../static/img/lightwire.png';
 import WaterDrop from '../../static/img/waterdrop.png';
-import Clock from '../../static/img/clock.gif';
 
 // const timerGlow = [
 // 	{ boxShadow: "0px 0px 5px 8px rgba(224, 53, 187, 0.8)" },
@@ -52,7 +50,9 @@ class Countdown extends React.Component {
 					<img src={ WaterDrop } alt="Waterdrop 3"/>
 				</div>
 				<div className="Countdown__container">
-					<h1>Countdown</h1>
+					<ScrollAnimation animateIn="flash" animateOnce={true}>
+						<h1>Countdown</h1>
+					</ScrollAnimation>
 					<div className="Countdown__box">
 						<img id="candycane" src={CandyCane} alt="Candy Cane" />
 						<img id="lightwire" src={LigthWire} alt="Light Wire" />

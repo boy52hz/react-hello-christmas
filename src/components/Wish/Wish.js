@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 import delay from 'delay';
 import './Wish.scss';
 
@@ -62,12 +63,14 @@ class Wish extends React.Component {
           isVisible={ sectionShow }
           animateOnMount={false}
         >
-          <div className="Wish__header">
-            <h1>May Santa Claus bring everything you wished for.</h1>
-            <p>What do you wish for ? We will send your request to Santa Claus ourselves.</p>
-          </div>
-          <img src={ Socks } alt="christmas sock"/>
-          <div class="Wish__button" onClick={this.handleShow}></div>
+          <ScrollAnimation animateIn="zoomInDown" animateOnce={true} duration={1.2}>
+            <div className="Wish__header">
+              <h1>May Santa Claus bring everything you wished for.</h1>
+              <p>What do you wish for ? We will send your request to Santa Claus ourselves.</p>
+            </div>
+            <img src={ Socks } alt="christmas sock"/>
+            <div class="Wish__button" onClick={this.handleShow}></div>
+          </ScrollAnimation>
         </Animated>
 
         <Modal show={modal} onHide={this.handleClose} centered>
