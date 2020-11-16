@@ -5,7 +5,7 @@ import { Modal } from 'react-bootstrap';
 
 import Socks from '../../static/img/socks.png';
 
-import Button from '../Button/Button';
+import { Button } from 'react-bootstrap';
 
 class Wish extends React.Component {
   constructor(props) {
@@ -32,20 +32,18 @@ class Wish extends React.Component {
             <p>What do you wish for ? We will send your request to Santa Claus ourselves.</p>
           </div>
 					<img src={ Socks } alt="christmas sock"/>
-          <div>
-            <Button type="submit" onClick={this.handleShow}>Let's make a wish!</Button>
-          </div>
+          <div class="Wish__button" onClick={this.handleShow}></div>
 				</div>
 
-        <Modal show={modal} onHide={this.handleClose}>
+        <Modal show={modal} onHide={this.handleClose} centered>
           <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
+            <Modal.Title>Let us know your wishes!</Modal.Title>
           </Modal.Header>
-          <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+          <Modal.Body>
+            <textarea id="wish-area" placeholder="Text your wishes here!" rows="12"></textarea>
+          </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={this.handleClose}>
-              Close
-            </Button>
+            <Button variant="success">Send my wish</Button>
           </Modal.Footer>
         </Modal>
       </section>
