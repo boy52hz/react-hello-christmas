@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 import './Footer.scss';
 import Yok from '../../static/img/about-us/yok.png';
 import Prew from '../../static/img/about-us/prew.png';
@@ -7,16 +8,15 @@ import Poi from '../../static/img/about-us/poi.png';
 import J from '../../static/img/about-us/j.png';
 import Ben from '../../static/img/about-us/ben.png';
 
-// import Bell from '../../static/img/about-us/bell.png';
-// import Tree from '../../static/img/about-us/tree.png';
+import Bell from '../../static/img/about-us/bell.png';
+import Tree from '../../static/img/about-us/tree.png';
 
 class Footer extends React.Component {
 	render() {
 		return (
-			<section id="Footer">
-				{/* <img class="big-bell" src={ Bell } alt="big bell"/>
-				<img class="big-bell" src={ Bell } alt="big bell"/>	 */}
+			<section id="Footer">	
 				<div className="Footer__container">
+				<ScrollAnimation animateIn="fadeIn" animateOnce={true}>
 					<ul>
 						<li>
 							<img src={ Yok } alt="Yok"/>
@@ -61,7 +61,12 @@ class Footer extends React.Component {
 							</div>
 						</li>
 					</ul>
+				</ScrollAnimation>
 				</div>
+				<img className="big-bell" src={ Bell } alt="big bell"/>
+				<img className="bell" src={ Bell } alt="bell"/>
+				<img className="bell2" src={ Bell } alt="bell"/>
+				<img className="tree" src={ Tree } alt="tree"/>
 			</section>
 		);
 	}
