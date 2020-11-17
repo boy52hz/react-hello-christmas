@@ -58,6 +58,7 @@ class Navbar extends React.Component {
           className={ this.state.open ? 'Navbar__menu' : 'Navbar__menu hide' }
           items={ ['Hero', 'History', 'Countdown', 'Wish', 'Footer'] } 
           currentClassName="is-current"
+          offset={-50}
         >
           <AnchorLink className="Navbar__item" href='#Hero'>Home</AnchorLink>
           <AnchorLink className="Navbar__item" href='#History'>History</AnchorLink>
