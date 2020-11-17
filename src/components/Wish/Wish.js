@@ -8,8 +8,11 @@ import { Animated } from 'react-animated-css';
 
 import Socks from '../../static/img/socks.png';
 import WishesWhale from '../../static/img/wishes-whale.png';
+import WishesWhalePortrait from '../../static/img/wishes-whale-portrait.png';
 
 import { Button } from 'react-bootstrap';
+
+const mediaQueryStr = '(max-width: 768px) and (orientation: portrait)';
 
 class Wish extends React.Component {
   constructor(props) {
@@ -17,7 +20,8 @@ class Wish extends React.Component {
     this.state = {
       modal: false,
       whaleAppeal: false,
-      sectionShow: true
+      sectionShow: true,
+      matches: window.matchMedia(mediaQueryStr).matches
     }
     this.handleShow = this.handleShow.bind(this);
     this.handleClose = this.handleClose.bind(this);
@@ -29,7 +33,6 @@ class Wish extends React.Component {
   handleClose() {
     this.setState({ modal: false });
   }
-
   async handleClick() {
     this.handleClose()
 
@@ -39,21 +42,28 @@ class Wish extends React.Component {
     await delay(1000);
     this.setState({ sectionShow: true })
   }
-
+  componentDidMount() {
+    const handler = e => this.setState({matches: e.matches});
+    window.matchMedia(mediaQueryStr).addEventListener('change', handler);
+  }
   render() {
-    const { modal, whaleAppeal, sectionShow } = this.state;
+    const { modal, whaleAppeal, sectionShow, matches } = this.state;
     return (
       <section id="Wish" className="Wish">
         <Animated 
           className="wishes-whale" 
-          animationIn="slideInRight" 
-          animationOut="slideOutLeft" 
+          animationIn={ !matches ? 'slideInRight' : 'slideInUp' }
+          animationOut={ !matches ? 'slideOutLeft' : 'slideOutRight' }
           animationInDuration={3000} 
           animationOutDuration={3000} 
           isVisible={ whaleAppeal }
           animateOnMount={false}
         >
-          <img src={ WishesWhale } alt="Wishes Whale"/>
+          <img 
+            className={ !matches ? 'landscape' : 'portrait' }
+            src={ !matches ? WishesWhale : WishesWhalePortrait } 
+            alt="Wishes Whale"
+          />
         </Animated>
 
         <Animated

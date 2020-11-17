@@ -1,10 +1,10 @@
 .Navbar {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 80px;
     display: flex;
     justify-content: space-around;
-    transition: .3s ease-in-out;
+    transition: height .3s ease-in-out;
     z-index: 99;
     background-color: rgba(#000000, .2);
 
@@ -30,7 +30,7 @@
     
     &__item {
         font-size: 28px;
-        margin-right: 40px; 
+        margin: 0 1.5em;
         text-decoration: none;
         transition: .2s ease-out;
         color: #ffff;
@@ -49,7 +49,7 @@
         cursor: pointer;
     }
 
-    @media screen and (max-width: 1066px) {
+    @media screen and (max-width: 1173px) {
         .hamburger {
             display: block;
         }
