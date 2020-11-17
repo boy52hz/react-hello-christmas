@@ -1,6 +1,5 @@
 import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
-import Confetti from 'react-confetti'
 import './Countdown.scss';
 
 import CandyCane from '../../static/img/candycane.png';
