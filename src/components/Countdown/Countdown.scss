@@ -120,28 +120,51 @@
     }
 }
 
-.santawhale {
+.santawhale1 {
     position: absolute;
-    margin-top: 55%;
-    margin-left: 50%;
-    height: 80%;
-    animation: animateWhale 6s linear infinite;
+    height: 200px;
+    animation: animateWhale1 10s linear infinite;
 }
 
-@keyframes animateWhale {
+.santawhale2 {
+    position: absolute;
+    height: 300px;
+    top: 80%;
+    animation: animateWhale2 10s linear infinite;
+}
+
+@keyframes animateWhale1 {
     0% {
-        transform: rotateZ(0deg);
+        transform: rotateZ(0deg); right:-30%;
     }
     25% {
-        transform: rotateZ(-5deg);
+        transform: rotateZ(-10deg) translateY(90px); right:20%;
     }
     50% {
-        transform: rotateZ(0deg);
+        transform: rotateZ(0deg); right:60%;
     }
     75% {
-        transform: rotateZ(-10deg);
+        transform: rotateZ(-15deg) translateY(70px); right:100%;
     }
     100% {
-        transform: rotateZ(0deg);
+        transform: rotateZ(0deg); right:120%;
+    }
+}
+
+@keyframes animateWhale2 {
+    0% {
+        transform: rotateZ(0deg); left:-30%;
+    }
+    25% {
+        transform: rotateZ(10deg) translateY(50px); left:20%;
+    }
+    50% {
+        transform: rotateZ(0deg); left:60%;
+    }
+    75% {
+        transform: rotateZ(15deg) translateY(40px); left:100%;
+    }
+    100% {
+        transform: rotateZ(0deg); left:120%;
     }
 }

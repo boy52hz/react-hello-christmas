@@ -37,7 +37,7 @@ class Wish extends React.Component {
     this.handleClose()
 
     this.setState({ whaleAppeal: true, sectionShow: false });
-    await delay(8000);
+    await delay(5000);
     this.setState({ whaleAppeal: false });
     await delay(1000);
     this.setState({ sectionShow: true })

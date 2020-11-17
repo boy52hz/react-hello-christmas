@@ -9,12 +9,13 @@
 
     .Wish {
         &__header {
-            margin-top: 20%;
+            margin-top: 15%;
             h1 {
                 font-size: 50px;
                 font-family: 'Cardo', serif;
                 font-weight: 700;
                 line-height: 180%;
+                color: #000000;
             }
         
             p {
@@ -31,7 +32,7 @@
 
             img {
                 width: 500px;
-                animation: animate-pulse 5s infinite;
+                animation: animate-pulse 3s infinite;
                 margin: 1em 0;
             }
         }
@@ -66,12 +67,12 @@
         z-index: 2;
 
         .landscape {
-            animation: whale-idle 4s infinite;
+            animation: whale-idle 2s infinite;
             width: 90%;
         }
 
         .portrait {
-            animation: whale-idle 4s infinite;
+            animation: whale-idle 2s infinite;
             width: 80%;
         }
     }
