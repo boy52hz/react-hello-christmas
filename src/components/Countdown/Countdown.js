@@ -1,9 +1,11 @@
 import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
+import Confetti from 'react-confetti'
 import './Countdown.scss';
 
 import CandyCane from '../../static/img/candycane.png';
 import LigthWire from '../../static/img/lightwire.png';
+import LightWireOn from '../../static/img/lightwire-on.gif'
 import WaterDrop from '../../static/img/waterdrop.png';
 
 // const timerGlow = [
@@ -15,6 +17,7 @@ import WaterDrop from '../../static/img/waterdrop.png';
 
 class Countdown extends React.Component {
 	state = {
+		merryXmas: false,
 		days: 0,
 		hours: 0,
 		minutes: 0,
@@ -22,16 +25,27 @@ class Countdown extends React.Component {
 	}
 
 	componentDidMount() {
+		// let temp = Date.now() + 10000;
 		this.tick = setInterval(() => {
 			const xmas = new Date(2020, 11, 25).getTime();
 			const now = new Date().getTime();
 			const distance = xmas - now;
-			const days = Math.floor(distance / (1000 * 60 * 60 * 24)).toString().padStart(2, 0);
-			const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, 0);
-			const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, 0);
-			const seconds = Math.floor((distance % (1000 * 60)) / 1000).toString().padStart(2, 0);
-			this.setState({ days, hours, minutes, seconds });
+			if (distance >= 0) {
+				const days = Math.floor(distance / (1000 * 60 * 60 * 24)).toString().padStart(2, 0);
+				const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, 0);
+				const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, 0);
+				const seconds = Math.floor((distance % (1000 * 60)) / 1000).toString().padStart(2, 0);
+				this.setState({ days, hours, minutes, seconds });	
+			} else {
+				this.setState({ merryXmas: true });
+			}
 		}, 1000);
+	}
+
+	componentDidUpdate() {
+		if (this.state.merryXmas) {
+			clearInterval(this.tick);
+		}
 	}
 
 	componentWillUnmount() {
@@ -54,8 +68,8 @@ class Countdown extends React.Component {
 						<h1>Countdown</h1>
 					</ScrollAnimation>
 					<div className="Countdown__box">
-						<img id="candycane" src={CandyCane} alt="Candy Cane" />
-						<img id="lightwire" src={LigthWire} alt="Light Wire" />
+						<img id="candycane" src={ CandyCane } alt="Candy Cane" />
+						<img id="lightwire" src={ state.merryXmas ? LightWireOn : LigthWire } alt="Light Wire" />
 						<div className="Countdown__item">
 							<div className="title">Days</div>
 							<div className="timer" >{state.days}</div>
