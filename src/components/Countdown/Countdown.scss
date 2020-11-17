@@ -35,9 +35,9 @@
         }
         img + img + img {
             position: absolute;
-            width: 100px;
+            width: 70px;
             left: 30vw;
-            top: -1in;
+            top: -.5in;
         }
     }
 
@@ -60,7 +60,7 @@
                 color: var(--light-color);
                 font-size: 48px;
                 height: 100%;
-                padding: .5em;
+                padding: 5% 20px;
 
                 .title {
                     font-size: .75em;
@@ -117,5 +117,54 @@
     }
     100% {
         transform: translateY(0);
+    }
+}
+
+.santawhale1 {
+    position: absolute;
+    height: 200px;
+    animation: animateWhale1 10s linear infinite;
+}
+
+.santawhale2 {
+    position: absolute;
+    height: 300px;
+    top: 80%;
+    animation: animateWhale2 10s linear infinite;
+}
+
+@keyframes animateWhale1 {
+    0% {
+        transform: rotateZ(0deg); right:-30%;
+    }
+    25% {
+        transform: rotateZ(-10deg) translateY(90px); right:20%;
+    }
+    50% {
+        transform: rotateZ(0deg); right:60%;
+    }
+    75% {
+        transform: rotateZ(-15deg) translateY(70px); right:100%;
+    }
+    100% {
+        transform: rotateZ(0deg); right:120%;
+    }
+}
+
+@keyframes animateWhale2 {
+    0% {
+        transform: rotateZ(0deg); left:-30%;
+    }
+    25% {
+        transform: rotateZ(10deg) translateY(50px); left:20%;
+    }
+    50% {
+        transform: rotateZ(0deg); left:60%;
+    }
+    75% {
+        transform: rotateZ(15deg) translateY(40px); left:100%;
+    }
+    100% {
+        transform: rotateZ(0deg); left:120%;
     }
 }

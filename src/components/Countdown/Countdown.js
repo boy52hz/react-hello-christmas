@@ -6,6 +6,8 @@ import CandyCane from '../../static/img/candycane.png';
 import LigthWire from '../../static/img/lightwire.png';
 import LightWireOn from '../../static/img/lightwire-on.gif'
 import WaterDrop from '../../static/img/waterdrop.png';
+import Santawhale1 from '../../static/img/santawhale1.png';
+import Santawhale2 from '../../static/img/santawhale2.png';
 
 // const timerGlow = [
 // 	{ boxShadow: "0px 0px 5px 8px rgba(224, 53, 187, 0.8)" },
@@ -66,6 +68,8 @@ class Countdown extends React.Component {
 					<ScrollAnimation animateIn="flash" animateOnce={true}>
 						<h1>Countdown</h1>
 					</ScrollAnimation>
+					<img className="santawhale1" src={ Santawhale1 } alt="Santawhale"/>
+					
 					<div className="Countdown__box">
 						<img id="candycane" src={ CandyCane } alt="Candy Cane" />
 						<img id="lightwire" src={ state.merryXmas ? LightWireOn : LigthWire } alt="Light Wire" />
@@ -86,6 +90,7 @@ class Countdown extends React.Component {
 							<div className="timer" >{state.seconds}</div>
 						</div>
 					</div>
+					<img className="santawhale2" src={ Santawhale2 } alt="Santawhale"/>
 				</div>
 			</section>
 		);

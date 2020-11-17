@@ -1,3 +1,20 @@
+.waterdrop {
+	img {
+		position: absolute;
+		width: 50px;
+		top: -.5in;
+		right: 4in;
+		animation: animateWater 5s linear infinite;
+	}
+
+	img + img {
+		position: absolute;
+		width: 70px;
+		right: 1in;
+		top: 3in;
+	}
+}
+
 #History {
   	display: flex;
   	justify-content: center;
