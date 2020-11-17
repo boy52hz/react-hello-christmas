@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.scss';
-
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import History from './components/History/History';
@@ -11,7 +10,7 @@ import Footer from './components/Footer/Footer';
 class App extends React.Component {
   render() {
     return (
-      <div className="App">                                          
+      <div className="App">
         <Navbar/>
         <Hero/>
         <History/>
