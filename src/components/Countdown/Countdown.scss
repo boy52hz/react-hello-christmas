@@ -33,6 +33,12 @@
             left: 1in;
             top: 1in;
         }
+        img + img + img {
+            position: absolute;
+            width: 100px;
+            left: 30vw;
+            top: -1in;
+        }
     }
 
     .Countdown {
@@ -95,7 +101,7 @@
     }
 
     @media screen and (max-width: 768px) {
-        .waterdrop > img { width: 100px }
+        .waterdrop img { width: 100px }
     }
 }
 
