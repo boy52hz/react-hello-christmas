@@ -4,10 +4,12 @@
   	align-items: center;
     background: url('../../static/img/iceberg.png') no-repeat left bottom;
     background-color: #9AC0CB;
+    background-size: 100%;
     min-height: 100%;
 
     .Wish {
         &__header {
+            margin-top: 20%;
             h1 {
                 font-size: 50px;
                 font-family: 'Cardo', serif;
@@ -28,7 +30,7 @@
             max-width: 80%;
 
             img {
-                width: 400px;
+                width: 500px;
                 animation: animate-pulse 5s infinite;
                 margin: 1em 0;
             }
