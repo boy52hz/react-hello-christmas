@@ -6,6 +6,7 @@ import CandyCane from '../../static/img/candycane.png';
 import LigthWire from '../../static/img/lightwire.png';
 import LightWireOn from '../../static/img/lightwire-on.gif'
 import WaterDrop from '../../static/img/waterdrop.png';
+import Santawhale from '../../static/img/santawhale.png';
 
 // const timerGlow = [
 // 	{ boxShadow: "0px 0px 5px 8px rgba(224, 53, 187, 0.8)" },
@@ -87,6 +88,7 @@ class Countdown extends React.Component {
 						</div>
 					</div>
 				</div>
+				<img className="santawhale" src={ Santawhale } alt="Santawhale"/>
 			</section>
 		);
 	}

@@ -35,9 +35,9 @@
         }
         img + img + img {
             position: absolute;
-            width: 100px;
+            width: 70px;
             left: 30vw;
-            top: -1in;
+            top: -.5in;
         }
     }
 
@@ -60,7 +60,7 @@
                 color: var(--light-color);
                 font-size: 48px;
                 height: 100%;
-                padding: .5em;
+                padding: 5% 20px;
 
                 .title {
                     font-size: .75em;
@@ -117,5 +117,31 @@
     }
     100% {
         transform: translateY(0);
+    }
+}
+
+.santawhale {
+    position: absolute;
+    margin-top: 55%;
+    margin-left: 50%;
+    height: 80%;
+    animation: animateWhale 6s linear infinite;
+}
+
+@keyframes animateWhale {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    25% {
+        transform: rotateZ(-5deg);
+    }
+    50% {
+        transform: rotateZ(0deg);
+    }
+    75% {
+        transform: rotateZ(-10deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
     }
 }

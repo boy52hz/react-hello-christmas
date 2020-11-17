@@ -13,12 +13,19 @@ import C2Back from '../../static/img/cards/c2_backreal.jpg';
 import C3Back from '../../static/img/cards/c3_backreal.jpg';
 import C4Back from '../../static/img/cards/c4_backreal.jpg';
 
+import WaterDrop from '../../static/img/waterdrop.png';
+
 // import bubble from '../../static/img/น้ำ.png';
 
 class HistorySection extends React.Component {
   render() {
     return (
       <section id="History">
+        <div className="waterdrop">
+					<img src={ WaterDrop } alt="Waterdrop 1"/>
+					<img src={ WaterDrop } alt="Waterdrop 2"/>
+					<img src={ WaterDrop } alt="Waterdrop 3"/>
+				</div>
         <div className="History__container">
           <h1>History of Christmas</h1>
           <p>Christmas is celebrated on December 25 and is both a sacred 

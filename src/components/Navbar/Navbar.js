@@ -4,7 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import HamburgerMenu from 'react-hamburger-menu';
 import './Navbar.scss';
 
-import Logo from '../../static/img/nav-logo.png';
+import Logo from '../../static/img/LOGO2.png';
 
 class Navbar extends React.Component {
   state = {
