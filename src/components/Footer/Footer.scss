@@ -40,12 +40,12 @@
             min-height: 339px;
     
             img{
-                width: 100px;
-                border-radius: 50px;
+                width: 120px;
+                border-radius: 50%;
                 transition: .3s ease-out;
                 &:hover {
-                    transform: scale(1.05);
-                    box-shadow: 0px 0px 10px #DCA04D;
+                    transform: scale(1.1);
+                    box-shadow: 0px 0px 20px #DCA04D;
                 }
             }
     
