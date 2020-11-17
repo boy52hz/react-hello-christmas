@@ -63,9 +63,14 @@
         position: absolute;
         z-index: 2;
 
-        img {
+        .landscape {
             animation: whale-idle 4s infinite;
             width: 90%;
+        }
+
+        .portrait {
+            animation: whale-idle 4s infinite;
+            width: 80%;
         }
     }
 
