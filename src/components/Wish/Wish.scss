@@ -42,14 +42,15 @@
             cursor: pointer;
             width: 525px;
             height: 166px;
-            transition: transform .2s ease-out;
+            transition: .2s ease-out;
 
             &:hover {
-                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                filter: drop-shadow(0px 4px 4px#DCA04D);
                 transform: scale(1.02);
             }
 
             &:active {
+                transition: none;
                 background: url('../../static/img/button/wish_button_clicked.png') no-repeat;
                 background-size: 100%;
                 width: 525px;
