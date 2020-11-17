@@ -27,7 +27,7 @@
     
     &__item {
         font-size: 28px;
-        margin-right: 40px; 
+        margin: 0 1.5em;
         text-decoration: none;
         transition: .2s ease-out;
         color: #ffff;
@@ -45,7 +45,7 @@
         cursor: pointer;
     }
 
-    @media screen and (max-width: 1066px) {
+    @media screen and (max-width: 1173px) {
         .hamburger {
             display: block;
         }
