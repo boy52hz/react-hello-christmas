@@ -12,19 +12,19 @@
                 font-size: 50px;
                 font-family: 'Cardo', serif;
                 font-weight: 700;
-                margin-bottom: 1rem;
-                padding: 1.2rem;
+                line-height: 180%;
             }
         
             p {
                 font-family: 'Cardo', serif;
                 font-size: 28px;
                 font-weight: 400;
+                text-shadow: 2px 2px 6px #FFFFFF;
             }
         }
 
         &__container {
-            margin: 6vh 0;
+            margin: 7vh 0;
             max-width: 80%;
 
             img {
@@ -41,7 +41,7 @@
             background-size: 100%;
             cursor: pointer;
             width: 525px;
-            height: 166px;
+            height: 160px;
             transition: .2s ease-out;
 
             &:hover {
@@ -85,25 +85,76 @@
         z-index: 2;
     }
 
-    @media screen and (max-width: 500px) {
-        .Wish__container img {
-            width: 250px;
+    @media screen and (max-width: 1440px) {
+        .Wish__header {
+            h1 { font-size: 44px; }
+            p { font-size: 24px; }
         }
-        .Wish__button {
-            width: 250px;
-            height: 100px;
-            &:active {
-                width: 250px;
-                height: 100px;
-            }
+        .Wish__container img { width: 300px; }
+        .Wish__button { 
+            width: 350px; 
+            &:active { width: 350px; }
         }
     }
 
-    @media screen and (max-width: 420px) {
-        .Wish__container img {
-            width: 200px;
+    @media screen and (max-width: 1024px) {
+        .Wish__header {
+            h1 { font-size: 38px; }
+            p { font-size: 22px; }
         }
     }
+
+    @media screen and (max-width: 1024px) {
+        .Wish__header {
+            h1 { font-size: 28px; }
+            p { font-size: 16px; }
+        }
+        .Wish__container img { width: 250px; }
+    }
+
+    @media screen and (max-width: 425px) {
+        .Wish__header {
+            h1 { font-size: 20px; }
+            p { font-size: 16px; }
+        }
+        .Wish__container img { width: 200px; }
+        .Wish__button { 
+            width: 320px; 
+            &:active { width: 320px; }
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        .Wish__header {
+            h1 { font-size: 20px; }
+            p { font-size: 16px; }
+        }
+        .Wish__container img { width: 180px; }
+        .Wish__button { 
+            width: 250px; 
+            &:active { width: 250px; }
+        }
+    }
+
+    // @media screen and (max-width: 500px) {
+    //     .Wish__container img {
+    //         width: 250px;
+    //     }
+    //     .Wish__button {
+    //         width: 250px;
+    //         height: 100px;
+    //         &:active {
+    //             width: 250px;
+    //             height: 100px;
+    //         }
+    //     }
+    // }
+
+    // @media screen and (max-width: 420px) {
+    //     .Wish__container img {
+    //         width: 200px;
+    //     }
+    // }
 }
 
 #wish-area {
