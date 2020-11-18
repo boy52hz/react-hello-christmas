@@ -64,11 +64,11 @@ class Countdown extends React.Component {
 					<img src={ WaterDrop } alt="Waterdrop 2"/>
 					<img src={ WaterDrop } alt="Waterdrop 3"/>
 				</div>
+				<img className="santawhale1" src={ Santawhale1 } alt="Santawhale"/>
 				<div className="Countdown__container">
 					<ScrollAnimation animateIn="flash" animateOnce={true}>
 						<h1>Countdown</h1>
 					</ScrollAnimation>
-					<img className="santawhale1" src={ Santawhale1 } alt="Santawhale"/>
 					
 					<div className="Countdown__box">
 						<img id="candycane" src={ CandyCane } alt="Candy Cane" />
@@ -90,6 +90,8 @@ class Countdown extends React.Component {
 							<div className="timer" >{state.seconds}</div>
 						</div>
 					</div>
+				</div>
+				<div className="row">
 					<img className="santawhale2" src={ Santawhale2 } alt="Santawhale"/>
 				</div>
 			</section>

@@ -9,7 +9,7 @@
 
     .Wish {
         &__header {
-            margin-top: 15%;
+            // margin-top: 15%;
             h1 {
                 font-size: 50px;
                 font-family: 'Cardo', serif;
@@ -31,7 +31,7 @@
             max-width: 80%;
 
             img {
-                width: 500px;
+                width: 400px;
                 animation: animate-pulse 3s infinite;
                 margin: 1em 0;
             }

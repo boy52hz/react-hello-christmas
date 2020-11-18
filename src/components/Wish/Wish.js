@@ -53,7 +53,7 @@ class Wish extends React.Component {
         <Animated 
           className="wishes-whale" 
           animationIn={ !matches ? 'slideInRight' : 'slideInUp' }
-          animationOut={ !matches ? 'slideOutLeft' : 'slideOutRight' }
+          animationOut="slideOutLeft"
           animationInDuration={3000} 
           animationOutDuration={3000} 
           isVisible={ whaleAppeal }
