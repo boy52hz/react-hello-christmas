@@ -13,11 +13,9 @@ class App extends React.Component {
     return (
       <div className="App">
         <SnowStorm 
-          flakesMaxActive={128} 
-          followMouse={false} 
-          flakeLeftOffset={100} 
-          flakeWidth={30} 
-          flakeHeight={20}
+          flakesMaxActive={50} 
+          followMouse={false}
+          flakeLeftOffset={100}
         />
         <Navbar/>
         <Hero/>
