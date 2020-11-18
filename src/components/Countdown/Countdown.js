@@ -7,28 +7,26 @@ import LigthWire from '../../static/img/lightwire.png';
 import LightWireOn from '../../static/img/lightwire-on.gif'
 import WaterDrop from '../../static/img/waterdrop.png';
 import Santawhale1 from '../../static/img/santawhale1.png';
-// import Santawhale2 from '../../static/img/santawhale2.png';
-
-// const timerGlow = [
-// 	{ boxShadow: "0px 0px 5px 8px rgba(224, 53, 187, 0.8)" },
-// 	{ boxShadow: "0px 0px 5px 8px rgba(53, 224, 224, 0.8)" },
-// 	{ boxShadow: "0px 0px 5px 8px rgba(216, 233, 116, 0.8)" },
-// 	{ boxShadow: "0px 0px 5px 8px rgba(92, 255, 177, 0.8)" }
-// ]
 
 class Countdown extends React.Component {
-	state = {
-		merryXmas: false,
-		days: 0,
-		hours: 0,
-		minutes: 0,
-		seconds: 0
+	constructor(props) {
+		super(props);
+		this.state = {
+			merryXmas: false,
+			days: 0,
+			hours: 0,
+			minutes: 0,
+			seconds: 0,
+			fastTravel: false,
+			toDate: null
+		}
+		this.handleClick = this.handleClick.bind(this);
 	}
+	
 
 	componentDidMount() {
-		// let temp = Date.now() + 10000;
 		this.tick = setInterval(() => {
-			const xmas = new Date(2020, 11, 25).getTime();
+			const xmas = this.state.fastTravel ? this.state.toDate : new Date(2020, 11, 25);
 			const now = new Date().getTime();
 			const distance = xmas - now;
 			if (distance >= 0) {
@@ -55,6 +53,10 @@ class Countdown extends React.Component {
 		}
 	}
 
+	handleClick() {
+		this.setState({ fastTravel: true, toDate: new Date(Date.now() + 10000) })
+	}
+
 	render() {
 		const state = this.state;
 		return (
@@ -71,7 +73,7 @@ class Countdown extends React.Component {
 					</ScrollAnimation>
 					
 					<div className="Countdown__box">
-						<img id="candycane" src={ CandyCane } alt="Candy Cane" />
+						<img id="candycane" src={ CandyCane } alt="Candy Cane" onClick={this.handleClick}/>
 						<img id="lightwire" src={ state.merryXmas ? LightWireOn : LigthWire } alt="Light Wire" />
 						<div className="Countdown__item">
 							<div className="title">Days</div>
