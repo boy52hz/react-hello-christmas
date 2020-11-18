@@ -1,5 +1,6 @@
 import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
+import Confetti from 'react-confetti'
 import './Countdown.scss';
 
 import CandyCane from '../../static/img/candycane.png';
@@ -18,9 +19,12 @@ class Countdown extends React.Component {
 			minutes: 0,
 			seconds: 0,
 			fastTravel: false,
-			toDate: null
+			toDate: null,
+			winWidth: 1600,
+			winHeight: 900
 		}
 		this.handleClick = this.handleClick.bind(this);
+		this.handleResize = this.handleResize.bind(this);
 	}
 	
 
@@ -39,6 +43,7 @@ class Countdown extends React.Component {
 				this.setState({ merryXmas: true });
 			}
 		}, 1000);
+		window.addEventListener('resize', this.handleResize);
 	}
 
 	componentDidUpdate() {
@@ -57,10 +62,18 @@ class Countdown extends React.Component {
 		this.setState({ fastTravel: true, toDate: new Date(Date.now() + 10000) })
 	}
 
+	handleResize() {
+		this.setState({ winHeight: window.innerHeight, winWidth: window.innerWidth });
+	}
+
 	render() {
 		const state = this.state;
 		return (
 			<section id="Countdown">
+				{ state.merryXmas ? <Confetti
+					width={state.winWidth}
+					height={state.winHeight}
+				/> : null }
 				<div className="waterdrop">
 					<img src={ WaterDrop } alt="Waterdrop 1"/>
 					<img src={ WaterDrop } alt="Waterdrop 2"/>
