@@ -125,6 +125,12 @@
                 transform: rotateZ(-20deg);
             }
 
+            @media screen and (max-width: 952px) {
+                #lightwire {
+                    width: 250px;
+                }
+            }
+
             @media screen and (max-width: 600px) {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
