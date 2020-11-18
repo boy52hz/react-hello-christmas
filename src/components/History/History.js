@@ -38,7 +38,7 @@ class HistorySection extends React.Component {
             Christmas Day–has been a federal holiday in the United States 
             since 1870.
           </p>
-          <ScrollAnimation animateIn="flash" animateOnce={true} duration={2}>
+          <ScrollAnimation animateIn="bounceIn" animateOnce={true} duration={2}>
             <div className="History__gallery">
               <FlipCard imgFront={ C1 } imgBack={ C1Back }/>
               <FlipCard imgFront={ C2 } imgBack={ C2Back }/>
