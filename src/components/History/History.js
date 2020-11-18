@@ -15,8 +15,6 @@ import C4Back from '../../static/img/cards/c4_backreal.jpg';
 
 import WaterDrop from '../../static/img/waterdrop.png';
 
-// import bubble from '../../static/img/น้ำ.png';
-
 class HistorySection extends React.Component {
   render() {
     return (
@@ -24,7 +22,6 @@ class HistorySection extends React.Component {
         <div className="waterdrop">
 					<img src={ WaterDrop } alt="Waterdrop 1"/>
 					<img src={ WaterDrop } alt="Waterdrop 2"/>
-					<img src={ WaterDrop } alt="Waterdrop 3"/>
 				</div>
         <div className="History__container">
           <h1>History of Christmas</h1>
@@ -41,7 +38,7 @@ class HistorySection extends React.Component {
             Christmas Day–has been a federal holiday in the United States 
             since 1870.
           </p>
-          <ScrollAnimation animateIn="bounceIn" animateOnce={true} duration={2}>
+          <ScrollAnimation animateIn="flash" animateOnce={true} duration={2}>
             <div className="History__gallery">
               <FlipCard imgFront={ C1 } imgBack={ C1Back }/>
               <FlipCard imgFront={ C2 } imgBack={ C2Back }/>
@@ -50,9 +47,6 @@ class HistorySection extends React.Component {
             </div>
           </ScrollAnimation>
         </div>
-        {/* <img className="bubble" src={ bubble } alt="bubble1"/>
-        <img className="bubble" src={ bubble } alt="bubble2"/>
-        <img className="bubble" src={ bubble } alt="bubble3"/> */}
       </section>
     );
   }
