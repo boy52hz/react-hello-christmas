@@ -163,18 +163,21 @@
 }
 
 .santawhale2 {
+    display: block;
     position: absolute;
     height: 300px;
-    top: 80%;
+    bottom: 0;
     animation: animateWhale2 10s linear infinite;
 }
 
 @keyframes animateWhale1 {
     0% {
-        transform: rotateZ(0deg); right:-30%;
+        transform: rotateZ(0deg); right:0%;
+        opacity: 0;
     }
     25% {
-        transform: rotateZ(-10deg) translateY(90px); right:20%;
+        transform: rotateZ(-10deg) translateY(90px); right:30%;
+        opacity: 1;
     }
     50% {
         transform: rotateZ(0deg); right:60%;
@@ -198,7 +201,7 @@
         transform: rotateZ(0deg); left:60%;
     }
     75% {
-        transform: rotateZ(15deg) translateY(40px); left:100%;
+        transform: rotateZ(15deg) translateY(40px); left:60%;
     }
     100% {
         transform: rotateZ(0deg); left:120%;

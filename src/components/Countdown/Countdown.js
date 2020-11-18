@@ -7,7 +7,7 @@ import LigthWire from '../../static/img/lightwire.png';
 import LightWireOn from '../../static/img/lightwire-on.gif'
 import WaterDrop from '../../static/img/waterdrop.png';
 import Santawhale1 from '../../static/img/santawhale1.png';
-import Santawhale2 from '../../static/img/santawhale2.png';
+// import Santawhale2 from '../../static/img/santawhale2.png';
 
 // const timerGlow = [
 // 	{ boxShadow: "0px 0px 5px 8px rgba(224, 53, 187, 0.8)" },
@@ -91,9 +91,8 @@ class Countdown extends React.Component {
 						</div>
 					</div>
 				</div>
-				<div className="row">
-					<img className="santawhale2" src={ Santawhale2 } alt="Santawhale"/>
-				</div>
+				{/* <img className="santawhale2" src={ Santawhale2 } alt="Santawhale"/> */}
+				{/* ปลาวาฬว่ายออกขอบขวาแล้ว Overflow */}
 			</section>
 		);
 	}
