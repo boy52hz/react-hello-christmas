@@ -1,2 +1,14 @@
-# Hello Christmas!
-![christmas-meme](https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/he-sees-you-when-youre-sleeping-christmas-meme-1543509252.png?crop=0.991xw:0.955xh;0.00691xw,0&resize=480:*)
+# Christmas coundown web project w/ React
+
+## Requirment
+- Node.js 14.x
+- Yarn 1.22
+
+## Installation
+`yarn`
+
+## Development
+`yarn start`
+
+## Build
+`yarn build`
